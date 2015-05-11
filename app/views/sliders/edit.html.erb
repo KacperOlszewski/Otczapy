@@ -1,0 +1,15 @@
+<div class="hero-unit">
+<h1>Edycja Slajdu: <%= @slider.name %></h1>
+
+<%= form_for(:slider, :url => {:action => 'update', :id => @slider.id}) do |pole| %>
+
+<%= render(:partial => "form", :locals => {:pole => pole}) %>
+
+<div style="text-align: center;">
+	<%= submit_tag("aktualizuj", :class => 'btn  btn-primary') %>
+	<%= link_to("anuluj", {:action => 'index'}, :class => 'btn btn-warning')%>
+	
+</div>
+
+<% end %>
+</div>

@@ -1,0 +1,86 @@
+
+  <section data-no-turbolink id="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 gallery_naglowek">       
+                    <h2>Galeria zdjęć, filmów i dźwięków</h2>
+                    <h4>Epsum factorial non deposit quid pro quo hic escorol. Souvlaki ignitus carborundum e pluribus unum.</h4>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+               <div class="tabs tabs-style-bar">
+                    <nav>
+                        <ul>
+                            <li><a href="#foto" class="icon icon-camera"><span>Zdjęcia</span></a></li>
+                            <li><a href="#muza" class="icon iconn-mic"><span>Audio</span></a></li>
+                            <li><a href="#filmy" class="icon iconn-video-camera"><span>Filmy</span></a></li> 
+
+                        </ul>
+                    </nav>
+                    <div class="content-wrap">
+
+                        <section id="foto">
+
+                              <% unless @gallery.blank? %> 
+                              <div class="align_center">
+                                    <% @gallery.each do |gallery| %>
+                                    
+                                        <div class="gallery">
+                                    
+                                                <%= link_to({:action => 'photos', :gallery_id => gallery.id}) do %>
+                
+                                                        <h3><%= gallery.name %></h3>
+                                                        <%= image_tag(gallery.img.url, :class => "img-responsive", :alt =>gallery.name) %>
+                    
+                                                <% end %>
+                                        </div>
+                                    <% end %>
+                                    </div>
+                                <% end %>
+                        </section>
+                        <section id="muza">
+                                <% unless @sound.blank? %>
+                                        <% @sound.each do |audios| %>
+                                        
+                                            <div class="video_gallery">
+                                        
+                                                            <h3><%= audios.name %></h3>
+                                                            <%= raw(audios.link) %>
+                
+                                            </div>
+                                            <div class="divider2"></div>
+                                        <% end %>
+                                    <% end %>
+                        </section>
+                        <section id="filmy" style="padding-top: 30px">
+                                <% unless @movies.blank? %>
+                                        <% @movies.each do |movie| %>
+                                                <div class="video_gallery">
+
+                                                            <h3><%= movie.name %></h3>
+                                                            <%= raw(movie.link) %>                                                    
+                                                    
+                                                </div>
+                                                <div class="divider2"></div>
+                                        <% end %>
+                                <% end %>
+                        </section>
+                    </div>
+                </div>          
+        </div>                  
+ </section>      
+ 
+    <div class="divider"></div>
+    <div class="divider2"></div>
+ 
+ 
+		<script>
+			(function() {
+
+				[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+					new CBPFWTabs( el );
+				});
+
+			})();
+		</script>

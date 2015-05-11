@@ -1,0 +1,39 @@
+<div class="hero-unit">
+
+<h1>Pokaż Galerię</h1>
+
+<table class="table table-striped table-bordered">
+	<tr>
+		<th>W kategorii</th>
+		<td><%= @galleries.type.name %></td>
+	</tr>
+	<tr>
+		<th>Nazwa</th>
+		<td><%= @galleries.name %></td>
+	</tr>
+	<tr>
+		<th>Pozycja</th>
+		<td><%= @galleries.position %></td>
+	</tr>
+	<% if !@galleries.img.blank? %>
+		<tr>
+			<th>Zdjęcie</th>
+			<td><%= image_tag(@galleries.img, :class => "img-responsive") %></td>
+		</tr>
+	<% end %>	
+	<tr>
+		<th>Utworzona:</th>
+		<td><%= @galleries.created_at %></td>
+	</tr>
+	<tr>
+		<th>Aktualizacja:</th>
+		<td><%= @galleries .updated_at %></td>
+	</tr>
+
+</table>
+
+<%= link_to("Powrót", {:action => 'index', :type_id => @types.id}, {:class => "btn btn-mini btn-primary"})%>
+
+
+
+</div>

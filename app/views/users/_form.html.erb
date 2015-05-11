@@ -1,0 +1,52 @@
+<%= error(@user) %>
+
+<table class="table table-striped table-bordered">	
+	<tr>
+		<th><%= pole.label(:login) %></th>
+		<td><%= pole.text_field(:user, :class =>"form-control" ) %></td>
+	</tr>
+
+	<tr>
+		<th><%= pole.label(:imie, "Imię") %></th>
+		<td><%= pole.text_field(:name, :class =>"form-control") %></td>
+	</tr>
+	<tr>
+		<th><%= pole.label(:nazwisko) %></th>
+		<td><%= pole.text_field(:surname, :class =>"form-control" ) %></td>
+	</tr>
+
+	<tr>
+		<th><%= pole.label(:hasło) %></th>
+		<td><%= pole.password_field(:password, :class =>"form-control" ) %></td>
+	</tr>
+		<tr>
+		<th><%= pole.label(:potwierdz_hasło, "Potwierdź hasło") %></th>
+		<td><%= pole.password_field(:password_confirmation, :class =>"form-control" ) %></td>
+	</tr>
+	<tr>
+		<th><%= pole.label(:email) %></th>
+		<td><%= pole.text_field(:email, :class =>"form-control" ) %></td>
+	</tr>
+	<tr>
+		<th><%= pole.label(:pozycja) %></th>
+		<td><%= pole.select(:position, 2..@counter, :class =>"form-control" ) %></td>
+	</tr>
+	<% unless @user.img.blank? %>
+		<tr>
+			<th>Zdjęcie</th> 
+			<td><%= image_tag(@user.img, :class => "img-responsive") %></td>
+		</tr>
+	<% end %>
+	<tr>
+		<th><%= pole.label(:zdjecie, "Zdjęcie") %></th>  
+		<td><%= pole.file_field(:img) %></td>
+	</tr>
+	<tr>
+		<th><%= pole.label(:link, "FB link") %></th>
+		<td><%= pole.text_field(:link, :class =>"form-control" ) %></td>
+	</tr>
+	<tr>
+		<th><%= pole.label(:text, "O sobie") %></th>
+		<td><%= pole.text_area :text, rows: 5 %></td>
+	</tr>
+</table>

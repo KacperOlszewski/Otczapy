@@ -1,0 +1,28 @@
+<div id="pokaz-slajdow" class="carousel slide" data-ride="carousel">
+    <% b = 0 %>
+    <ol class="carousel-indicators">
+        <% while b < @slider_size; puts b %>
+
+            <li data-target="#pokaz-slajdow" data-slide-to="<%=b%>" <%if b==0%>class="active"<% end %>> </li>
+
+        <% b+=1 %>
+        <% end %>
+    </ol>
+    <div class="carousel-inner">
+        <% c=0 %>
+        <% @slider.each do |slide| %> 
+            <div class=<%if c==0%>"item active"<% else %>"item"<% end %>>
+                <%= image_tag(slide.img.url, :class => "img-responsive") %>
+                <div class="carousel-caption">
+                    <h1><%= slide.name %></h1>
+                    <p><%= slide.text %></p>
+                </div>
+            </div>
+
+        <% c+=1 %>
+        <% end %>  
+        </div>
+</div>
+
+    <div class="divider top_divider"></div>
+    <div class="divider2"></div>

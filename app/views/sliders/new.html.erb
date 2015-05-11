@@ -1,0 +1,16 @@
+<div class="hero-unit">
+	
+<h1>Nowy Slajd</h1>
+
+<%= form_for(:slider, :url => {:action => 'create'}) do |pole| %>
+
+<%= render(:partial => "form", :locals => {:pole => pole}) %>
+
+<div style="text-align: center;">
+	<%= submit_tag("utwórz", :class =>'btn btn-mini btn-warning') %>
+	<%= link_to("powrót", {:action => 'index'}, {:class => "btn btn-mini btn-primary"}) %>
+</div>
+
+<% end %>
+
+</div>

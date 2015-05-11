@@ -1,0 +1,16 @@
+<div class="hero-unit">
+<h1>Usuń Posta</h1>
+
+<%= form_for(:post, :url => {:action => 'destroy', :id => @post.id}) do |pole| %>
+
+<p >Czy napewno chcesz usunąć Posta: <p class ="text-warning"><%= @post.name %> ?<p/></p>
+
+
+<div>
+	<%= submit_tag("Usuń",  {:class => "btn btn-mini btn-warning"}) %>
+	<%= link_to("powrót", {:action=> 'index'}, {:class => "btn btn-mini btn-primary"}) %>
+</div>
+
+<% end %>
+
+</div>

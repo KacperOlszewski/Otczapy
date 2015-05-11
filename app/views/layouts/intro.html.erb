@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Master Imprezy - Intro</title>
+    <%= stylesheet_link_tag    "styles", media: "all", "data-turbolinks-track" => true %>
+	<%= stylesheet_link_tag("application", media: "all", "data-turbolinks-track" => true)%>
+    <%= javascript_include_tag "application" %>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Firma MASTER - agencja specjalizującą się w organizacji i aranżacji 
+	niepowtarzalnych imprez, targów, jarmarków oraz produkcji efektownych dekoracji dla Galerii i Centrów Handlowych." />
+	<meta name="keywords" content="Jarmarki, Targi, festiwale, eventy, dekoracje, imprezy, wprowadzenie" />
+
+</head>
+<body class="master_bg max_height">
+
+<div class="contains parent">
+
+
+        <div class="video">
+            <iframe src="http://player.vimeo.com/video/119466494?autoplay=1;title=0&amp;byline=0&amp;portrait=0;" width="400" height="225" frameborder="0"></iframe>
+                <a class="logo_intro">
+                    <img src="assets/logo_master.png" alt="">
+                </a>
+        </div>        
+      
+<a href="public/index.html">       
+            <button type="submit" class="skip">
+                <span aria-hidden="true" class="icon-home2" style="margin-right: 10px;"></span>  Przejdź do strony
+            </button>
+</a>
+</div>
+
+      <script>
+        $(".video").fitVids();
+        $(".video").fitVids({ customSelector: "iframe[src^='http://socialcam.com']"});
+    
+        var $window = $(window); 
+        var windowsize = $window.width();
+        if (windowsize > 567) { 
+        $( ".skip" ).mouseenter(function() {	 
+        $(this).animate({right: '-140px'}, 600,'easeOutBack');
+    	});
+
+        $( ".skip" ).mouseleave(function() {	 
+        $(this).animate({right: '-312px'}, 600, 'easeOutBack');
+    	});
+        }
+      </script> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60508332-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+ 
+</body>
+</html>

@@ -1,0 +1,7 @@
+<div class="contains"> 
+  	<% if !flash[:notice].blank? %>
+  		<div class="flush_admin" id="main" data-anijs="if: load, on: window, do: swing animated">
+  			<%= flash[:notice] %>
+  		</div>
+    <% end %>
+</div>

@@ -1,0 +1,50 @@
+<%= error(@workshop) %>
+
+<table class="table table-striped table-bordered">  	
+	<tr>
+		<th><%= pole.label(:pozycja) %></th>
+		<td><%= pole.select(:position, 1..@counter, :class =>"form-control" ) %></td>
+	</tr>
+	<tr>
+		<th><%= pole.label(:nazwa) %></th>
+		<td><%= pole.text_field(:name, :class =>"form-control") %></td>
+	</tr>
+	<tr>
+		<th><%= pole.label(:miejsce) %></th>
+		<td><%= pole.text_field(:place, :class =>"form-control") %></td>
+	</tr>
+	<tr>
+		<th><%= pole.label(:data) %></th>
+		<td><%= pole.text_field(:date, :class =>"form-control") %></td>
+	</tr>
+	
+	<% if !@workshop.img.blank? %>
+		<tr>
+			<th>Zdjęcie</th> 
+			<td><%= image_tag(@workshop.img, :class => "img-responsive", :style => "width:100% !important") %></td>
+		</tr>
+	<% end %>
+	<% if !@workshop.file.blank? %>
+		<tr>
+			<th>Plik</th>   
+			<td><%= @workshop.file.size %> bytes</td>
+		</tr>
+	<% end %>
+	<tr>
+		<th><%= pole.label(:zdjecie, "Zdjęcie") %></th>  
+		<td><%= pole.file_field(:img) %></td>
+	</tr>
+
+	<tr>
+		<th><%= pole.label(:file, "Plik") %></th>  
+		<td><%= pole.file_field(:file) %></td>
+	</tr>
+	<tr>
+		<th><%= pole.label(:text, "Treść") %></th>
+		<td><%= pole.text_area :text, rows: 20, data: { no_turbolink: true }, :class =>"ckeditor" %></td>
+	</tr>
+	<tr>
+		<th><%= pole.label(:link, "Link do galerii") %></th>
+		<td><%= pole.select(:link, @gallery.map{|t| [t.name, t.link]}, :class => 'form-control') %></td>
+	</tr>
+</table>

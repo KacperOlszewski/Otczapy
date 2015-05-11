@@ -1,0 +1,50 @@
+<div class="hero-unit">
+
+<h1>Pokaż Posta</h1>
+
+<table class="table table-striped table-bordered">
+
+	<tr>
+		<th>Nazwa</th>
+		<td><%= @post.name %></td>
+	</tr>
+	<tr>
+		<th>Pozycja</th>
+		<td><%= @post.position %></td>
+	</tr>
+	<tr>
+		<th>Opis</th>
+		<td><%= raw(@post.text) %></td>
+	</tr>
+	
+	<% if !@post.img.blank? %>
+		<tr>
+			<th>Zdjęcie</th>
+			<td><%= image_tag(@post.img, :class => "img-responsive") %></td>
+		</tr>
+	<% end %>	
+	<tr>
+		
+		<th>Plik:</th>
+			<% if !@post.file.blank? %> 
+		        <td><%= link_to "Download", @post.file.url(:original) %></td>
+			<% else %>
+		        <td>brak</td>
+			<% end %>
+	</tr>
+
+	<tr>
+		<th>Utworzona:</th>
+		<td><%= @post.created_at %></td>
+	</tr>
+	<tr>
+		<th>Aktualizacja:</th>
+		<td><%= @post.updated_at %></td>
+	</tr>
+
+</table>
+
+<%= link_to("Powrót", {:action => 'index'}, {:class => "btn btn-mini btn-primary"})%>
+
+
+</div>

@@ -1,0 +1,40 @@
+<div class="hero-unit">
+
+<h1>Pokaż Zdjęcie</h1>
+
+<table class="table table-striped table-bordered">
+
+	<tr>
+		<th>Nazwa</th>
+		<td><%= @photos.name %></td>
+	</tr>
+	<tr>
+		<th>Pozycja</th>
+		<td><%= @photos.position %></td>
+	</tr>
+	<% if !@photos.img.blank? %>
+		<tr>
+			<th>Zdjęcie</th>
+			<td><%= image_tag(@photos.img, :class => "img-responsive") %></td>
+		</tr>
+	<% end %>	
+	<tr>
+	<tr>
+		<th>W kategorii</th>
+		<td><%= @photos.gallery.name %></td>
+	</tr>
+		<th>Utworzona:</th>
+		<td><%= @photos.created_at %></td>
+	</tr>
+	<tr>
+		<th>Aktualizacja:</th>
+		<td><%= @photos.updated_at %></td>
+	</tr>
+
+</table>
+
+<%= link_to("Powrót", {:action => 'index', :gallery_id => @gallery.id}, {:class => "btn btn-mini btn-primary"})%>
+
+
+
+</div>

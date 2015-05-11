@@ -1,0 +1,34 @@
+<div class="hero-unit">
+<h1>Slider</h1>
+
+<%= link_to("dodaj nowy Slajd", {:action => 'new'}, {:class =>'btn btn-mini btn-primary'}) %>
+
+<p style='text-align: right;'>Ilość Slajdów: <%= @slider.count %> </p>
+
+<table class="table table-striped table-bordered"> 
+	<tr class="info">
+
+		<th>pozycja</th>
+		<th>Info na slajdzie</th>
+		<th>zdjęcie</th>
+		<th>akcja</th>
+	</tr>
+<% @slider.each do |slides| %>
+	<tr>
+
+		<td><%= slides.position %></td>
+		<td><%= slides.name %></td>
+		<td><%= image_tag slides.img.url(:thumb) %></td>
+
+		<td class="action">   
+			<%= link_to("pokaż", {:action => 'show', :id => slides.id}, {:class => "btn btn-xs btn-primary"}) %>
+			<%= link_to("edycja", {:action => 'edit', :id => slides.id}, {:class => "btn btn-xs btn-warning"}) %>
+			<%= link_to("usuń", {:action => 'delete', :id => slides.id}, {:class => "btn btn-xs btn-danger"}) %>
+		</td>
+	</tr>
+
+	<% end %>
+
+</table>
+
+</div>

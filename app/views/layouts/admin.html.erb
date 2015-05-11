@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Panel Otczapy</title>
+    <%= favicon_link_tag '/assets/eye_round.png' %> 
+    <%= stylesheet_link_tag    "styles", media: "all", "data-turbolinks-track" => true %>
+	  <%= stylesheet_link_tag("application", media: "all", "data-turbolinks-track" => true)%>
+    <%= javascript_include_tag "application" %>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="admin">
+  
+<div class="navbar-wrapper">
+  <div class="container">
+	<nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+          <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                <a class="navbar-brand iconn-arrow-left" href="/public"></a>
+          </div>
+              <div style="float: right; width: 94%; position:relative" class="collapse navbar-collapse">
+                    <ul class="navi navbar-nav">
+                      <li><a href="/posts">Posty</a></li>
+                      <li><a href="/types">Galerie</a></li>
+                      <li><a href="/workshops">Warsztaty</a></li>
+		                  <li><a href="/sliders">Slider</a></li>
+                      <li><a href="/movies">Filmy</a></li>
+                      <li><a href="/calendars">Dźwięki</a></li>
+                      <li><%= link_to("Użytkownicy", :controller => 'users') %></li>
+                    </ul>
+                    <div class="identity"><%="Zalogowany jako: #{session[:user]}" if session[:user] %>
+                          <%= link_to("Wyloguj", {:controller => 'access', :action => 'logout'} , {:class => "btn btn-xs btn-warning"}) if session[:user] %>                 
+                    </div>
+              </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+<div class="container" style="margin:70px auto 80px">
+  	<% if !flash[:notice].blank? %>
+  		<div class="alert alert-success" style='text-align :center; width:99%; margin:20px auto' id="main" data-anijs="if: load, on: window, do: swing animated">
+  			<%= flash[:notice] %>
+  		</div>
+    <% end %>
+  
+    <%= yield %>
+</div>
+<div class="imgs">
+<img src="/assets/eye_round.png" alt="oko">
+</div>
+
+<script src="http://anijs.github.io/lib/anijs/anijs-min.js"></script> 
+</body>
+</html>

@@ -1,0 +1,33 @@
+<div class="hero-unit">
+<h1>Kategoria</h1>
+
+<%= link_to("dodaj kategorię galerii", {:action => 'new'}, {:class =>'btn btn-mini btn-primary'}) %>
+
+<p style='text-align: right;'>Ilość Kategorii: <%= @type.size %> </p>
+
+<table class="table table-striped table-bordered"> 
+	<tr class="info">
+
+		<th>Pozycja</th>
+		<th>Nazwa</th>
+		<th>Galerie</th>
+		<th>akcja</th>
+	</tr>
+<% @type.each do |types| %>
+	<tr>
+
+		<td><%= types.position %></td>
+		<td><%= link_to types.name, {:controller => 'galleries', :type_id => types.id} %></td>
+		<td><%= (types.galleries.size - 1) %></td>
+
+		<td class="action">   
+			<%= link_to("edycja", {:action => 'edit', :id => types.id}, {:class => "btn btn-xs btn-warning"}) %>
+			<%= link_to("usuń", {:action => 'delete', :id => types.id}, {:class => "btn btn-xs btn-danger"}) %>
+		</td>
+	</tr>
+
+	<% end %>
+
+</table>
+
+</div>

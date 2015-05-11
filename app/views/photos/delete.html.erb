@@ -1,0 +1,17 @@
+<div class="hero-unit">
+<h1>Usuń Zdjęcie</h1>
+
+<%= form_for(:photos, :url => {:action => 'destroy', :id => @photos.id, :gallery_id => @gallery.id}) do |pole| %>
+
+<p>Czy napewno chcesz usunąć zdjęcie: </p>
+<p><b><%= @photos.name %> ?</b></p>
+
+
+<div>
+	<%= submit_tag("Usuń",  {:class => "btn btn-mini btn-warning"}) %>
+	<%= link_to("powrót", {:action=> 'index', :gallery_id => @gallery.id}, {:class => "btn btn-mini btn-primary"}) %>
+</div>
+
+<% end %>
+
+</div>

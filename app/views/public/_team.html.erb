@@ -1,0 +1,191 @@
+    <section id="zespol">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 zaspol_naglowek">       
+                    <h2>Ja, Ty, On, Ona, My...</h2>
+                    <h4>czyli o nas!</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row extra_bottom_margin2">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">  
+                    <ul class="nav nav-pills zespol_przyciski">
+                        <li class="active"><a href="#rezysery" data-toggle="tab">Zawiadowca</a></li>
+                        <li><a href="#aktory" data-toggle="tab">Ogniwa Tworzące</a></li>
+                        <li><a href="#warsztaty" data-toggle="tab">Doświadczanie</a></li>
+                        <li><a href="#laury" data-toggle="tab">Laury</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">  
+                    <div class="tab-content zespol_ikonki">
+                        <div class="tab-pane fade in active" id="rezysery">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-5 col-md-5 col-lg-6">  
+                                    <img src="/assets/Ela.jpg" alt="" class="img-responsive img-rounded pull left">
+                                </div>
+                                <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">  
+                                    <h3>Elżbieta Górczyńska</h3>
+                                    <p>pedagog, reżyser Teatru Dzieci i Młodzieży, instruktor teatralny.</p>
+                                    <p style="max-width: 90%; margin:0 auto; text-align: justify;text-justify: inter-word;">
+                                        „Twórczość artystyczna zależy od gustu i wyobraźni twórcy. Jego gust pozwala decydować o tym co jest interesujące, adekwatne, wiarygodne i posiada wagę. Pytanie w procesie tworzenia prawie nigdy nie brzmi „jaki jest sens tej sceny?”, lecz raczej: „czy to jest prawdziwe, czy nie ma w tym fałszu?” oraz „czy ta scena jest interesująca? Czy pozwala twórcy poczuć to co czuł gdy zakochał się w jakiejś historii?” To jest intuicyjny proces. To nie polega na konstruowaniu argumentów.”
+                                    
+                                    </p>
+                                    <p style="text-align: right;max-width: 90%;">Ela G.</p>
+                                    <h2>
+                                        <a href="mailto:elka_61@op.pl"><span class="icon icon-envelop"></span></a>
+                                        <a href="https://www.facebook.com/elzbieta.gorczynska.5"><span class="icon iconn-facebook2"></span></a>
+                                    </h2>                                  
+                                </div>                                
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="aktory">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">  
+                                    <img src="/assets/Ekipa.jpg" alt="" class="img-responsive img-rounded">
+                                </div>
+                                <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">  
+                                    <h3>Członkowie:</h3>
+                                    
+                                    <ul>
+                                        <li>Joanna Figas</li>
+                                        <li>Marta Barwinek</li>
+                                        <li>Anastazja Żak</li>
+                                        <li>Katarzyna Piechnik</li>
+                                        <li>Michalina Matuszak</li>
+                                        <li>Jakub Wiącek</li>
+                                        <li>Wojciech Kowalski</li>
+                                        <li>Szymon Kokoszka</li>
+                                        <li>Kacper Olszewski</li>
+                                        <li>Damian Tomczyk</li>
+                                    </ul>
+                                    <h3>Adepci:</h3>
+                                    
+                                    <ul>
+                                        <li>Julia Biskup</li>
+                                        <li>Agnieszka Dopierała</li>
+                                    </ul>  
+                                    <h3>Kierownik literacki:</h3>
+                                    <ul>
+                                        <li>Zuzanna Wiącek</li>
+                                    </ul>  
+                                 
+                                    <h3>W stanie spoczynku:</h3>
+                                    
+                                    <ul>
+                                        <li>Jakub Liberkowski</li>
+                                        <li>Łukasz Szymanowski</li>
+                                        <li>Daniel Olczak </li>
+                                        <li>Kasandra Zawal</li>
+                                        <li>Sonia Górczyńska</li>
+                                    </ul>  
+                                    
+                                </div>                                
+                            </div>
+                        </div> 
+
+                        <div class="tab-pane " id="warsztaty">
+                            <div class="row">
+                                <div id="workshop_slider" class="workshop_slider" data-ride="carousel">
+                                    
+                                    <div class="carousel-inner">
+                                        <% d=0 %>
+                                        <% @workshop.each do |workshop_slides| %> 
+                                            
+                                                <div class=<%if d==0%>"item active"<% else %>"item"<% end %>>
+                                                    <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">  
+                                                        <%= image_tag(workshop_slides.img.url, :class => "img-responsive") %>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+                                                            <h3><%= workshop_slides.name %></h3>
+                                                            <div class="content"><%= raw(workshop_slides.text) %></div>
+                                                           
+                                                            <p>Kiedy: <%= workshop_slides.date %></p>
+                                                            <p>Gdzie: <%= workshop_slides.place %></p>
+                                                                     
+                                                    </div>  
+                                                </div>
+                                        <% d+=1 %>
+                                        <% end %>  
+                                    </div>
+                                            
+                                          <a class="left carousel-control" href="#workshop_slider" role="button" data-slide="prev">
+                                            <span class="iconn-arrow-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                          </a>
+                                          <a class="right carousel-control" href="#workshop_slider" role="button" data-slide="next">
+                                            <span class="iconn-arrow-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                          </a>
+                                </div>                                
+
+                            </div>
+                        </div>  
+                        
+                        <div class="tab-pane " id="laury">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-5 col-md-5 col-lg-6">  
+                                    <img src="/assets/warsztaty.jpg" alt="" class="img-responsive img-rounded pull left">
+                                </div>
+                                <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">  
+                                    <h3>Laury</h3>
+
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis
+                                    </p>
+                                 
+                                </div>                                
+                            </div>
+                        </div>   
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+    </section>
+
+    <div class="divider2"></div>
+    <div class="divider3"></div>
+
+
+    <section id="czlonkowie">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 wspolpracownicy_naglowek">       
+                    <h2>My aktywni!</h2>
+                    <h4>"jestem prądem unoszę się błyskawicą nie spadam czuję w sobie wartość słowa jego życie"</h4>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row center">
+                <% @users.each do |user| %>
+                    <div class="ekipa_display">  
+                    
+                        <%= image_tag(user.img.url, :class => "img-responsive img-circle member_foto", :target => '_blank') %>
+                        <h3><%=user.name%> <%=user.surname%></h3>
+                        
+                        <div class="inline">
+                            <p><%= user.text %></p>
+                            <h2>
+                                <% if !user.email.blank? %>
+                                    <%= mail_to(user.email) do %><span class="icon iconn-envelop"></span><% end %>
+                                <% end %>
+                                <% if !user.link.blank? %>
+                                    <%= link_to(user.link, :target => '_blank') do %><span class="icon iconn-facebook2"></span><% end %>
+                                <% end %>
+                            </h2>
+                        </div>
+                    </div>
+                <% end %>
+
+            </div>
+        </div>                    
+    </section>
+
+    <div class="divider"></div>
+    <div class="divider2"></div>

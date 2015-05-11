@@ -1,0 +1,38 @@
+<div class="hero-unit">
+<h1>Dźwięki</h1>
+
+<%= link_to("dodaj nowy dźwięk", {:action => 'new'}, {:class =>'btn btn-mini btn-primary'}) %>
+
+<p style='text-align: right;'>Ilość dźwięków: <%= @calendar.size %> </p>
+
+<table class="table table-striped table-bordered"> 
+	<tr class="info">
+
+		<th>pozycja</th>
+		<th>nazwa</th>
+		<th>link do dźwięku</th>
+		<th>akcja</th>
+	</tr>
+<% @calendar.each do |calendars| %>
+	<tr>
+
+		<td><%= calendars.position %></td>
+		<td><%= calendars.name %></td>
+        <td ><% if !calendars.link.blank? %>
+             dodano
+          <% else %>
+             brak
+          <% end %>
+        </td>
+
+		<td class="action">   
+			<%= link_to("edycja", {:action => 'edit', :id => calendars.id}, {:class => "btn btn-xs btn-warning"}) %>
+			<%= link_to("usuń", {:action => 'delete', :id => calendars.id}, {:class => "btn btn-xs btn-danger"}) %>
+		</td>
+	</tr>
+
+	<% end %>
+
+</table>
+
+</div>

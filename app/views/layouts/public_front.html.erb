@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Otczapy Teatr</title>
+  <%= favicon_link_tag '/assets/eye_round.png' %> 
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Grupa Treatralna Otczapy, pod berłem Elżbiety Górczyńskiej" />
+	<meta name="keywords" content="Otczapy, WOK, teatr, Jamy, opowieści, Śpiąca Królewna, Górczyńska, Olszewski, Wiącek, Figas, Barwinek, Piechnik" />
+</head>
+<body>
+  
+<%= render(:partial=>"navigation") %>
+<%= render(:partial=>"locale") %>
+
+<%= render(:partial=>"sliderMain") %>
+
+<%= yield %>
+
+
+<%= render(:partial=>"who") %>
+
+<%= render(:partial=>"team") %>
+
+<%= render(:partial=>"gallery") %>
+
+<%= render(:partial=>"links") %>
+
+<%= render(:partial=>"quickContact") %>   
+
+<%= render(:partial=>"footer") %>
+
+<script>
+        $("textarea").tooltip();
+        $(".video_gallery").fitVids();
+var lastId,
+    topMenu = $("#ul_nawigacja"),
+    topMenuHeight = topMenu.outerHeight()+15,
+    // Wszystkie elementy listy
+    menuItems = topMenu.find("a"),
+    // Kotwice do pozycji menu
+    scrollItems = menuItems.map(function(){
+      var item = $($(this).attr("href"));
+      if (item.length) { return item; }
+    });
+
+menuItems.click(function(e){
+  var href = $(this).attr("href"),
+      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+  $('html, body').stop().animate({ 
+      scrollTop: offsetTop
+  }, 1000);
+  e.preventDefault();
+});
+
+$(window).scroll(function(){
+
+   var fromTop = $(this).scrollTop()+topMenuHeight;
+   
+
+   var cur = scrollItems.map(function(){
+     if ($(this).offset().top < fromTop)
+       return this;
+   });
+
+   cur = cur[cur.length-1];
+   var id = cur && cur.length ? cur[0].id : "";
+   
+   if (lastId !== id) {
+       lastId = id;
+
+       menuItems
+         .parent().removeClass("active")
+         .end().filter("[href=#"+id+"]").parent().addClass("active");
+   }                   
+});
+
+$('.carousel, .workshop_slider').carousel({
+    interval: false
+}) 
+
+</script>
+<script src="http://anijs.github.io/lib/anijs/anijs-min.js"></script> 
+</body>
+</html>

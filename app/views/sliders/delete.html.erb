@@ -1,0 +1,16 @@
+<div class="hero-unit">
+<h1>Usuń Slajd</h1>
+
+<%= form_for(:slider, :url => {:action => 'destroy', :id => @slider.id}) do |pole| %>
+
+<p >Czy napewno chcesz usunąć Slajd: <p class ="text-warning"><%= @slider.name %> ?<p/></p>
+
+
+<div>
+	<%= submit_tag("Usuń",  {:class => "btn btn-mini btn-warning"}) %>
+	<%= link_to("powrót", {:action=> 'index'}, {:class => "btn btn-mini btn-primary"}) %>
+</div>
+
+<% end %>
+
+</div>

@@ -1,0 +1,38 @@
+<div class="hero-unit">
+<h1>Filmy</h1>
+
+<%= link_to("dodaj nowy Film", {:action => 'new'}, {:class =>'btn btn-mini btn-primary'}) %>
+
+<p style='text-align: right;'>Ilość filmów: <%= @movie.size %> </p>
+
+<table class="table table-striped table-bordered"> 
+	<tr class="info">
+
+		<th>pozycja</th>
+		<th>nazwa</th>
+		<th>link do filmu</th>
+		<th>akcja</th>
+	</tr>
+<% @movie.each do |movies| %>
+	<tr>
+
+		<td><%= movies.position %></td>
+		<td><%= movies.name %></td>
+        <td ><% if !movies.link.blank? %>
+             dodano
+          <% else %>
+             brak
+          <% end %>
+        </td>	
+
+		<td class="action">   
+			<%= link_to("edycja", {:action => 'edit', :id => movies.id}, {:class => "btn btn-xs btn-warning"}) %>
+			<%= link_to("usuń", {:action => 'delete', :id => movies.id}, {:class => "btn btn-xs btn-danger"}) %>
+		</td>
+	</tr>
+
+	<% end %>
+
+</table>
+
+</div>

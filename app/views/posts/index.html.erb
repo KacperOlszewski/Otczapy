@@ -1,0 +1,40 @@
+<div class="hero-unit">
+<h1>Aktualności</h1>
+
+<%= link_to("dodaj nowego Posta", {:action => 'new'}, {:class =>'btn btn-mini btn-primary'}) %>
+
+<p style='text-align: right;'>Ilość Postów: <%= @post.size %> </p>
+
+<table class="table table-striped table-bordered">
+	<tr class="info">
+
+		<th>pozycja</th>
+		<th>nazwa</th>
+		<th>zdjęcie</th>
+		<th>plik do pobrania</th>
+		<th>akcja</th>
+	</tr>
+<% @post.each do |posts| %>
+	<tr>
+
+		<td><%= posts.position %></td>
+		<td><%= link_to posts.name, {:action => 'show', :id => posts.id} %></td>
+		<td><%= image_tag posts.img.url(:thumb) %></td>
+        <td ><% if !posts.file.blank? %>
+             dodano
+          <% else %>
+            brak
+          <% end %>
+    </td>	
+
+		<td class="action">   
+			<%= link_to("edycja", {:action => 'edit', :id => posts.id}, {:class => "btn btn-xs btn-warning"}) %>
+			<%= link_to("usuń", {:action => 'delete', :id => posts.id}, {:class => "btn btn-xs btn-danger"}) %>
+		</td>
+	</tr>
+
+	<% end %>
+
+</table>
+
+</div>

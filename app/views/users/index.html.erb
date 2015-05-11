@@ -1,0 +1,37 @@
+<div class="hero-unit">
+<h1>Użytkownicy</h1>
+
+<%= link_to("dodaj nowego użytkownika", {:action => 'new'}, {:class =>'btn btn-mini btn-primary'}) %>
+
+<p style='text-align: right;'>Ilość Użytkowników: <%= @user.size %> </p>
+
+<table class="table table-striped table-bordered"> 
+	<tr class="info">
+		<th>Lp</th>
+		<th>Login</th>
+		<th>Imię i Nazwisko</th>
+		<th>email</th>
+		<th>zdjęcie</th>
+		<th>akcja</th>
+	</tr>
+<% @user.each do |users| %>
+	<tr>
+		<td><%= users.position %></td>
+		<td><%= users.user %></td>
+		<td><%= users.name + " " + users.surname %></td>
+		<td><%= mail_to(users.email) %></td>
+		<td><%= image_tag users.img.url(:thumb) %></td>
+	
+
+		<td class="action">   
+
+			<%= link_to("edycja", {:action => 'edit', :id => users.id}, {:class => "btn btn-xs btn-warning"}) %>
+			<%= link_to("usuń", {:action => 'delete', :id => users.id}, {:class => "btn btn-xs btn-danger"}) %>
+		</td>
+	</tr>
+
+	<% end %>
+
+</table>
+
+</div>

@@ -1,0 +1,44 @@
+<div class="flush_message">
+    <%= render(:partial=>"flash") %>
+</div>
+
+    <section id="kontakt">
+        <div class="container extra_bottom_margin extra_bottom_margin">
+
+        
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">       
+                    <h2>Chcesz się z nami skontaktować?</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <h5>Masz pytania</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad </p>
+                    <h5>Nasz adres:</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
+                    <h5>Zadzwoń do nas!</h5>
+                    <h2>838 234 234 </h2>  
+                </div> 
+                <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 col-sm-offset-1 col-md-offset-1  col-lg-offset-1  ">
+                    <%= form_tag({:controller => 'public', :action => 'contact_form'}) do %>
+                        <div class="form-group">
+                            <%= label_tag 'name', 'Imię i Nazwisko' %>
+                            <%= text_field_tag 'name', nil, class: 'form-control', placeholder: 'Imię i Nazwisko', required: true %>
+                        </div>
+                       <div class="form-group">
+                           <%= label_tag 'email', 'Email' %>
+                           <%= email_field_tag 'email', nil, class: 'form-control', placeholder: 'Twój Adres Email', :required => true %>
+                       </div>
+                       <div class="form-group">
+                           <%= label_tag 'comments', 'Treść' %>
+                           <%= text_area_tag 'comments', nil, class: 'form-control', rows: 4, placeholder: 'Treść zapytania...', required: true %>
+                       </div> 
+                        <div class="form-group">
+                            <%= submit_tag nil, class: 'submitTheForm btn btn-success btn-lg' %>
+                        </div>
+                    <% end %>
+                </div>
+            </div>
+        </div>
+    </section>

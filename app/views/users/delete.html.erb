@@ -1,0 +1,16 @@
+<div class="hero-unit">
+<h1>Usuń Konto</h1>
+
+<%= form_for(:user, :url => {:action => 'destroy', :id => @user.id}) do |pole| %>
+
+<p >Czy napewno chcesz usunąć konto użytkownika: <p class ="text-warning"><%= @user.name+" "+@user.surname %> ?<p/></p>
+
+
+<div>
+	<%= submit_tag("Usuń",  {:class => "btn btn-mini btn-warning"}) %>
+	<%= link_to("powrót", {:action=> 'index'}, {:class => "btn btn-mini btn-primary"}) %>
+</div>
+
+<% end %>
+
+</div>

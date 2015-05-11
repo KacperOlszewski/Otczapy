@@ -1,0 +1,29 @@
+<% @title = "Zdjęcia Otczapy" %>
+<div class="container photos_container">
+
+    <h2><%= @photo.name %>		
+        <%= link_to("", {:controller => 'public'} , :class => "back_button iconn-arrow-left") %>
+    </h2>
+    <div class="clear"></div>
+        
+    <div data-no-turbolink class="contains">
+        <div class="photos">
+            <div id="gallery_display">
+                
+            	<% @photo.photos.order('position DESC').each do |pictures| %>
+                	<a href="<%= pictures.img.url %>" title="<%= pictures.name %>">
+        				<%= image_tag(pictures.img.url(:original, :alt =>pictures.name)) %>
+        			</a>
+        		<% end %>
+        		
+            </div>
+        
+        </div>
+    </div>
+        
+</div>
+
+    <div class="divider extra_top_margin"></div>
+    <div class="divider2 extra_bottom_margin"></div>
+ 
+ 
