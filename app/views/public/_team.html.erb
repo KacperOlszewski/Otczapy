@@ -15,6 +15,8 @@
                         <li class="active"><a href="#rezysery" data-toggle="tab">Zawiadowca</a></li>
                         <li><a href="#aktory" data-toggle="tab">Ogniwa Tworzące</a></li>
                         <li><a href="#warsztaty" data-toggle="tab">Doświadczanie</a></li>
+                        <li><a href="#spektakle" data-toggle="tab">Spektalke c.d.</a></li>
+                        <li><a href="#inne" data-toggle="tab">Inne wątki</a></li>
                         <li><a href="#laury" data-toggle="tab">Laury</a></li>
                     </ul>
                 </div>
@@ -25,9 +27,9 @@
                         <div class="tab-pane fade in active" id="rezysery">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-5 col-md-5 col-lg-6">  
-                                    <img src="/assets/Ela.jpg" alt="" class="img-responsive img-rounded pull left">
+                                    <img src="/assets/Ela.jpg" alt="" width="600" class="img-responsive img-rounded pull left">
                                 </div>
-                                <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">  
+                                <main class="col-xs-12 col-sm-7 col-md-7 col-lg-6">  
                                     <h3>Elżbieta Górczyńska</h3>
                                     <p>pedagog, reżyser Teatru Dzieci i Młodzieży, instruktor teatralny.</p>
                                     <p style="max-width: 90%; margin:0 auto; text-align: justify;text-justify: inter-word;">
@@ -39,16 +41,16 @@
                                         <a href="mailto:elka_61@op.pl"><span class="icon icon-envelop"></span></a>
                                         <a href="https://www.facebook.com/elzbieta.gorczynska.5"><span class="icon iconn-facebook2"></span></a>
                                     </h2>                                  
-                                </div>                                
+                                </main>                                
                             </div>
                         </div>
 
                         <div class="tab-pane fade" id="aktory">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">  
-                                    <img src="/assets/Ekipa.jpg" alt="" class="img-responsive img-rounded">
+                                    <img src="/assets/Ekipa.jpg" width="600" alt="" class="img-responsive img-rounded">
                                 </div>
-                                <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">  
+                                <main class="col-xs-12 col-sm-5 col-md-5 col-lg-5">  
                                     <h3>Członkowie:</h3>
                                     
                                     <ul>
@@ -84,7 +86,7 @@
                                         <li>Sonia Górczyńska</li>
                                     </ul>  
                                     
-                                </div>                                
+                                </main>                                
                             </div>
                         </div> 
 
@@ -97,17 +99,24 @@
                                         <% @workshop.each do |workshop_slides| %> 
                                             
                                                 <div class=<%if d==0%>"item active"<% else %>"item"<% end %>>
-                                                    <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">  
-                                                        <%= image_tag(workshop_slides.img.url, :class => "img-responsive") %>
+                                                    <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7 parent">  
+                                                        <%= image_tag(workshop_slides.img.url(:medium), :class => "img-responsive img-rounded") %>
+                                                        
+                                                            <% if !workshop_slides.link.blank? %>
+                                                                  <a href="/public/photos?gallery_id=<%= workshop_slides.link %>">
+                                                                      <p class="photo btn-success position">Zobacz zdjęcia!</p>
+                                                                  </a> 
+                                                            <% end %>
                                                     </div>
-                                                    <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+                                                    <main class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
                                                             <h3><%= workshop_slides.name %></h3>
                                                             <div class="content"><%= raw(workshop_slides.text) %></div>
                                                            
                                                             <p>Kiedy: <%= workshop_slides.date %></p>
                                                             <p>Gdzie: <%= workshop_slides.place %></p>
-                                                                     
-                                                    </div>  
+                                                            
+                                                            
+                                                    </main>  
                                                 </div>
                                         <% d+=1 %>
                                         <% end %>  
@@ -126,19 +135,138 @@
                             </div>
                         </div>  
                         
+                        <div class="tab-pane " id="spektakle">
+                            <div class="row">
+                                <div id="spektakl_slider" class="workshop_slider" data-ride="carousel">
+                                    
+                                    <div class="carousel-inner">
+                                        <% f=0 %>
+                                        <% @workshop.each do |workshop_slides| %> 
+                                            
+                                                <div class=<%if f==0%>"item active"<% else %>"item"<% end %>>
+                                                    <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7 parent">  
+                                                        <%= image_tag(workshop_slides.img.url(:medium), :class => "img-responsive img-rounded") %>
+                                                        
+                                                            <% if !workshop_slides.link.blank? %>
+                                                                  <a href="/public/photos?gallery_id=<%= workshop_slides.link %>">
+                                                                      <p class="photo btn-success position">Zobacz zdjęcia!</p>
+                                                                  </a> 
+                                                            <% end %>
+                                                    </div>
+                                                    <main class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+                                                            <h3><%= workshop_slides.name %></h3>
+                                                            <div class="content"><%= raw(workshop_slides.text) %></div>
+                                                           
+                                                            <p>Kiedy: <%= workshop_slides.date %></p>
+                                                            <p>Gdzie: <%= workshop_slides.place %></p>
+                                                            
+                                                            
+                                                    </main>  
+                                                </div>
+                                        <% f+=1 %>
+                                        <% end %>  
+                                    </div>
+                                            
+                                          <a class="left carousel-control" href="#spektakl_slider" role="button" data-slide="prev">
+                                            <span class="iconn-arrow-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                          </a>
+                                          <a class="right carousel-control" href="#spektakl_slider" role="button" data-slide="next">
+                                            <span class="iconn-arrow-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                          </a>
+                                </div>                                
+
+                            </div>
+                        </div>
+                        
+                        <div class="tab-pane " id="inne">
+                            <div class="row">
+                                <div id="other_slider" class="workshop_slider" data-ride="carousel">
+                                    
+                                    <div class="carousel-inner">
+                                        <% e=0 %>
+                                        <% @workshop.each do |workshop_slides| %> 
+                                            
+                                                <div class=<%if e==0%>"item active"<% else %>"item"<% end %>>
+                                                    <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7 parent">  
+                                                        <%= image_tag(workshop_slides.img.url(:medium), :class => "img-responsive img-rounded") %>
+                                                        
+                                                            <% if !workshop_slides.link.blank? %>
+                                                                  <a href="/public/photos?gallery_id=<%= workshop_slides.link %>">
+                                                                      <p class="photo btn-success position">Zobacz zdjęcia!</p>
+                                                                  </a> 
+                                                            <% end %>
+                                                    </div>
+                                                    <main class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+                                                            <h3><%= workshop_slides.name %></h3>
+                                                            <div class="content"><%= raw(workshop_slides.text) %></div>
+                                                           
+                                                            <p>Kiedy: <%= workshop_slides.date %></p>
+                                                            <p>Gdzie: <%= workshop_slides.place %></p>
+                                                            
+                                                            
+                                                    </main>  
+                                                </div>
+                                        <% e+=1 %>
+                                        <% end %>  
+                                    </div>
+                                            
+                                          <a class="left carousel-control" href="#other_slider" role="button" data-slide="prev">
+                                            <span class="iconn-arrow-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                          </a>
+                                          <a class="right carousel-control" href="#other_slider" role="button" data-slide="next">
+                                            <span class="iconn-arrow-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                          </a>
+                                </div>                                
+
+                            </div>
+                        </div>  
+                        
                         <div class="tab-pane " id="laury">
                             <div class="row">
-                                <div class="col-xs-12 col-sm-5 col-md-5 col-lg-6">  
-                                    <img src="/assets/warsztaty.jpg" alt="" class="img-responsive img-rounded pull left">
-                                </div>
-                                <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">  
-                                    <h3>Laury</h3>
-
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis
-                                    </p>
-                                 
+                                <div id="laury_slider" class="workshop_slider" data-ride="carousel">
+                                    
+                                    <div class="carousel-inner">
+                                        <% e=0 %>
+                                        <% @workshop.each do |workshop_slides| %> 
+                                            
+                                                <div class=<%if e==0%>"item active"<% else %>"item"<% end %>>
+                                                    <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7 parent">  
+                                                        <%= image_tag(workshop_slides.img.url(:medium), :class => "img-responsive img-rounded") %>
+                                                        
+                                                            <% if !workshop_slides.link.blank? %>
+                                                                  <a href="/public/photos?gallery_id=<%= workshop_slides.link %>">
+                                                                      <p class="photo btn-success position">Zobacz zdjęcia!</p>
+                                                                  </a> 
+                                                            <% end %>
+                                                    </div>
+                                                    <main class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+                                                            <h3><%= workshop_slides.name %></h3>
+                                                            <div class="content"><%= raw(workshop_slides.text) %></div>
+                                                           
+                                                            <p>Kiedy: <%= workshop_slides.date %></p>
+                                                            <p>Gdzie: <%= workshop_slides.place %></p>
+                                                            
+                                                            
+                                                    </main>  
+                                                </div>
+                                        <% e+=1 %>
+                                        <% end %>  
+                                    </div>
+                                            
+                                          <a class="left carousel-control" href="#laury_slider" role="button" data-slide="prev">
+                                            <span class="iconn-arrow-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                          </a>
+                                          <a class="right carousel-control" href="#laury_slider" role="button" data-slide="next">
+                                            <span class="iconn-arrow-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                          </a>
                                 </div>                                
+
                             </div>
                         </div>   
                     </div>
@@ -164,9 +292,9 @@
         <div class="container">
             <div class="row center">
                 <% @users.each do |user| %>
-                    <div class="ekipa_display">  
+                    <div data-no-turbolink class="ekipa_display">  
                     
-                        <%= image_tag(user.img.url, :class => "img-responsive img-circle member_foto", :target => '_blank') %>
+                        <%= image_tag(user.img.url(:thumb), :class => "img-responsive img-circle member_foto", :target => '_blank') %>
                         <h3><%=user.name%> <%=user.surname%></h3>
                         
                         <div class="inline">

@@ -1,13 +1,13 @@
 <div class="hero-unit">
-<h1>Edycja workshopa: <%= @workshop.name %></h1>
+<h1>Edycja workshopa: <%= @workshops.name %></h1>
 
-<%= form_for(:workshop, :url => {:action => 'update', :id => @workshop.id}) do |pole| %>
+<%= form_for(:workshops, :url => {:action => 'update', :category_id => @cats.id, :id => @workshops.id}) do |pole| %>
 
 <%= render(:partial => "form", :locals => {:pole => pole}) %>
 
 <div style="text-align: center;">
 	<%= submit_tag("aktualizuj", :class => 'btn  btn-primary') %>
-	<%= link_to("anuluj", {:action => 'index'}, :class => 'btn btn-warning')%>
+	<%= link_to("anuluj", {:action => 'index', :category_id => @cats.id}, :class => 'btn btn-warning')%>
 	
 </div>
 

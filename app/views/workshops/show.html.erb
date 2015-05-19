@@ -1,41 +1,41 @@
 <div class="hero-unit">
 
-<h1>Pokaż workshopa</h1>
+<h1>Pokaż workshopsa</h1>
 
 <table class="table table-striped table-bordered">
 
 	<tr>
 		<th>Nazwa</th>
-		<td><%= @workshop.name %></td>
+		<td><%= @workshops.name %></td>
 	</tr>
 	<tr>
 		<th>Pozycja</th>
-		<td><%= @workshop.position %></td>
+		<td><%= @workshops.position %></td>
 	</tr>
 	<tr>
 		<th>Miejsce</th>
-		<td><%= @workshop.place %></td>
+		<td><%= @workshops.place %></td>
 	</tr>
 	<tr>
 		<th>Data</th>
-		<td><%= @workshop.date %></td>
+		<td><%= @workshops.date %></td>
 	</tr>
 	<tr>
 		<th>Opis</th>
-		<td><%= raw(@workshop.text) %></td>
+		<td><%= raw(@workshops.text) %></td>
 	</tr>
 	
-	<% if !@workshop.img.blank? %>
+	<% if !@workshops.img.blank? %>
 		<tr>
 			<th>Zdjęcie</th>
-			<td><%= image_tag(@workshop.img, :class => "img-responsive") %></td>
+			<td><%= image_tag(@workshops.img, :class => "img-responsive") %></td>
 		</tr>
 	<% end %>	
 	<tr>
 		
 		<th>Plik:</th>
-			<% if !@workshop.file.blank? %> 
-		        <td><%= link_to "Download", @workshop.file.url(:original) %></td>
+			<% if !@workshops.file.blank? %> 
+		        <td><%= link_to "Download", @workshops.file.url(:original) %></td>
 			<% else %>
 		        <td>brak</td>
 			<% end %>

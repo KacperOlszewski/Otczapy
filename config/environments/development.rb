@@ -24,7 +24,7 @@ Myapp::Application.configure do
       :port                 => 587,
 	    :domain               => '188.166.0.85',
       :user_name            => 'kacper2olszewski@gmail.com',
-      :password             => 'xxxxx',
+      :password             => 'XXXXXXXX',
       :authentication       => 'plain',
       :enable_starttls_auto => true
 	  }

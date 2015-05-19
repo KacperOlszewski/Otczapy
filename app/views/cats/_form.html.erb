@@ -1,0 +1,17 @@
+<%= error(@category) %>
+
+<table class="table table-striped table-bordered">	
+	<tr>
+		<th><%= pole.label(:pozycja) %></th>
+		<td><%= pole.select(:position, 1..@counter, :class =>"form-control" ) %></td>
+	</tr>
+
+	<tr>
+		<th><%= pole.label(:nazwa) %></th>
+		<td><%= pole.text_field(:name, :class =>"form-control") %></td>
+	</tr>
+	<tr>
+		<th><%= pole.label(:created_at, "Utworzona") %></th>
+		<td><%= pole.datetime_select(:created_at, :class =>"form-control") %></td>
+	</tr>
+</table>

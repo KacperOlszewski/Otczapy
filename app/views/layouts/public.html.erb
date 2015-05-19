@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Foty Otczapy</title>
     <%= favicon_link_tag '/assets/eye_round.png' %> 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -32,9 +33,9 @@
         </div>
     </header>
 </div>
-
+<section>
 <%= yield %>
-
+</section>
 <%= render(:partial=>"quickContact") %>   
 
 <%= render(:partial=>"footer") %>

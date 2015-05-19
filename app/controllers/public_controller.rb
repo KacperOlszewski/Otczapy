@@ -9,7 +9,8 @@ layout :resolve_layout
     @post = Post.sort.paginate(:page => params[:page], :per_page => 6)
     @slider = Slider.order('position DESC')
     @slider_size = Slider.count
-    @workshop = Workshop.sort
+    @workshop = Workshop.where(:category_id => 1).order('position DESC')
+    @links = Workshop.where(:category_id => 3).sort
     @gallery = Gallery.where(:type_id => 1).order('position DESC')[0..-2]
     @movies = Movie.sort 
     @sound = Calendar.sort

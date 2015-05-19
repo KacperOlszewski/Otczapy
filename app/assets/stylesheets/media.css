@@ -4,7 +4,15 @@
 		line-height: 1.2rem;
 	}
 }
-
+@media (max-width: 1199px){
+	#logo img {
+	  display: block;
+	  float: none;
+	  padding-top: 5px;
+	  transition: all 0.5s ease;
+	  width: 180px !important
+	}
+}
 @media(min-width: 992px) and (max-width: 1199px){
 	html{
 		font-size: 50%;
@@ -16,6 +24,9 @@
 	html{
 		font-size: 40%;
 		line-height: 1.2rem;
+	}
+	.gallery {
+    width:47%;
 	}
 }
 
@@ -31,9 +42,31 @@
 		margin-left: -20px;
 		margin-right: -20px;
 	}
+	.gallery {
+    width:47%;
+	}
+
+	.Ab_ovo {
+	  padding: 20px;
+	  margin-top:-20px;
+	}
+	.Ab_ovo p {
+	  margin:0 auto; text-indent: 20px;
+	}
 }
-
-
+@media(max-width: 580px){
+	.gallery {
+    width:96%;
+	}
+	.display_none {
+		display: none;
+	}
+	.Ab_ovo img {
+	  width: 100%;
+	  margin: 0 0 20px 0;
+	  float: right;
+	}
+}
 @media(max-width: 480px){
 	.carousel-caption {
 		top: 0;
@@ -49,8 +82,36 @@
 	.carousel-caption p{
 		display: none;
 	}
+	#logo img {	
+	  display: block;
+	  float: none;
+	  padding-top: 8px;
+	  margin-top: -34px;
+	  margin-left: -18px;
+	  margin-right: -12px;
+	  transition: all 0.5s ease;
+	  width: 138px !important;
+	}
 
+	 h1 {
+	  font-size: 4rem;
+	}
+	h2 {
+	  font-size: 3rem;
+	  line-height: 4.8rem;
+	}
+	h3 {
+	  font-size: 2rem;
+	  line-height: 2.5rem;
+	}
+	h4 {
+	  font-size: 1.8rem;
+	  line-height: 2.5rem;
+	  color:#838383
+	}       
+        
 }
+
 
 @media (max-width: 1200px) {
      .black_nav .navbar-fixed-top .navbar-header {
@@ -78,11 +139,4 @@
         padding-top: 10px;
         padding-bottom: 10px;
     }
-	#logo img {
-	  display: block;
-	  float: none;
-	  padding-top: 5px;
-	  transition: all 0.5s ease;
-	  width: 180px !important
-	}
 }

@@ -1,6 +1,6 @@
-<div class="flush_message">
+<dialog class="flush_message">
     <%= render(:partial=>"flash") %>
-</div>
+</dialog>
 
     <section id="kontakt">
         <div class="container extra_bottom_margin extra_bottom_margin">
@@ -13,12 +13,18 @@
             </div>
             <div class="row">
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                    <h5>Masz pytania</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad </p>
-                    <h5>Nasz adres:</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
-                    <h5>Zadzwoń do nas!</h5>
-                    <h2>838 234 234 </h2>  
+                    <h4>Nasze dane kontaktowe:</h4>
+                    <p>Mail:  teatrotczapy@gmail.com<br>
+                        Elżbieta Górczyńska: tel. 663 531 966<br>
+                        Wrzesiński Ośrodek Kultury: <br><a href="http://www.wok.wrzesnia.pl/">http://www.wok.wrzesnia.pl/</a>
+                                <h2>
+                                    <a target="_blank" href="https://instagram.com/otczapy/"><span class="icon iconn-instagram"></span></a>
+                                    <a target="_blank" href="https://www.facebook.com/TeatrOtczapy/"><span class="icon iconn-facebook2"></span></a>
+                                </h2>   
+                        </p>
+                    <h4>Masz pytania? To wal tu obok!</h4>
+                    <h4>...albo zadzwoń!</h4>
+                    <h2>663 531 966</h2>  
                 </div> 
                 <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 col-sm-offset-1 col-md-offset-1  col-lg-offset-1  ">
                     <%= form_tag({:controller => 'public', :action => 'contact_form'}) do %>

@@ -1,7 +1,7 @@
 <div class="hero-unit">
 <h1>Aktualności</h1>
 
-<%= link_to("dodaj nowego Posta", {:action => 'new'}, {:class =>'btn btn-mini btn-primary'}) %>
+<%= link_to("dodaj nowego Posta", {:action => 'new'},{data: { no_turbolink: true },:class =>'btn btn-mini btn-primary'}) %>
 
 <p style='text-align: right;'>Ilość Postów: <%= @post.size %> </p>
 
@@ -28,7 +28,7 @@
     </td>	
 
 		<td class="action">   
-			<%= link_to("edycja", {:action => 'edit', :id => posts.id}, {:class => "btn btn-xs btn-warning"}) %>
+			<%= link_to("edycja", {:action => 'edit', :id => posts.id},{data: { no_turbolink: true }, :class => "btn btn-xs btn-warning"}) %>
 			<%= link_to("usuń", {:action => 'delete', :id => posts.id}, {:class => "btn btn-xs btn-danger"}) %>
 		</td>
 	</tr>

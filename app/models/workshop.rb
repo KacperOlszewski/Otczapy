@@ -1,5 +1,7 @@
 class Workshop < ActiveRecord::Base
-    
+
+	belongs_to :cat    
+	
 	validates :name, :text, :place, :presence => true
 
         

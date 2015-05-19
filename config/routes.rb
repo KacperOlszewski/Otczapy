@@ -1,5 +1,9 @@
 Myapp::Application.routes.draw do
 
+  get "cats/index"
+  get "cats/new"
+  get "cats/edit"
+  get "cats/delete"
   get "workshops/index"
   get "workshops/show"
   get "workshops/new"
@@ -20,8 +24,7 @@ scope "(:locale)", locale: /#{I18n.available_locales.join("|")}/ do
   get 'public/contact'
 end
 
-mount Ckeditor::Engine => '/ckeditor'
- 
+
 get 'admin', :to => "access#index"
   # You can have the root of your site routed with "root"
 root to: 'public#index'
@@ -29,7 +32,8 @@ root to: 'public#index'
 match ':controller(/:action(/:id))', :via => [:get, :post]
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
-
+mount Ckeditor::Engine => '/ckeditor'
+ 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 

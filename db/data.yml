@@ -1,0 +1,1556 @@
+
+---
+calendars:
+  columns:
+  - id
+  - name
+  - position
+  - link
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Bałwan - Marta
+    - 1
+    - <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/128014178&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+    - 2015-04-12 18:04:14.000000000 Z
+    - 2015-04-22 21:19:59.000000000 Z
+
+---
+cats:
+  columns:
+  - id
+  - name
+  - position
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Warsztaty
+    - 1
+    - 2015-05-11 12:15:00.000000000 Z
+    - 2015-05-11 16:31:01.000000000 Z
+  - - 3
+    - Przekaziory
+    - 2
+    - 2015-05-11 13:35:00.000000000 Z
+    - 2015-05-11 17:12:15.000000000 Z
+
+---
+galleries:
+  columns:
+  - id
+  - name
+  - type_id
+  - link
+  - position
+  - img_file_name
+  - img_content_type
+  - img_file_size
+  - img_updated_at
+  - created_at
+  - updated_at
+  records: 
+  - - 3
+    - brak linku!
+    - 1
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - 2015-04-22 14:14:00.000000000 Z
+    - 2015-04-22 14:14:35.000000000 Z
+  - - 5
+    - Etiuda poetycka
+    - 1
+    - 
+    - 1
+    - PA280596.jpg
+    - image/jpeg
+    - 344173
+    - 2015-04-22 20:29:32.000000000 Z
+    - 2015-04-22 20:17:00.000000000 Z
+    - 2015-05-11 16:18:25.000000000 Z
+  - - 8
+    - 'Warszaty ruchowo-rytmiczne z Maciejem Dziaczko  '
+    - 1
+    - 
+    - 2
+    - 602872_471069059595407_2044637806_n.jpg
+    - image/jpeg
+    - 228903
+    - 2015-05-11 14:50:37.000000000 Z
+    - 2015-05-11 14:49:00.000000000 Z
+    - 2015-05-11 16:19:03.000000000 Z
+  - - 9
+    - Warsztaty rytmiczno-ruchowe z Niną Wolską- Pruszowską - 05 stycznia 2013r.
+    - 1
+    - 
+    - 3
+    - 248716_282434571879175_1145048413_n.jpg
+    - image/jpeg
+    - 291826
+    - 2015-05-11 15:32:47.000000000 Z
+    - 2015-05-11 15:02:00.000000000 Z
+    - 2015-05-11 16:19:24.000000000 Z
+  - - 10
+    - Warsztaty z aktorami Teatru Terminus A Quo - 01 marca 2013r.
+    - 1
+    - 
+    - 4
+    - PIC_0199.jpg
+    - image/jpeg
+    - 203436
+    - 2015-05-11 15:08:40.000000000 Z
+    - 2015-05-11 15:07:00.000000000 Z
+    - 2015-05-11 16:19:53.000000000 Z
+  - - 11
+    - Warsztaty taneczne z Alsu Sabirova - czerwiec 2013r.
+    - 1
+    - 
+    - 5
+    - warsztaty_z_aslu.jpg
+    - image/jpeg
+    - 316993
+    - 2015-05-11 15:20:10.000000000 Z
+    - 2015-05-11 15:18:00.000000000 Z
+    - 2015-05-11 16:20:44.000000000 Z
+  - - 12
+    - 'Warsztaty teatralne z Agnieszką Rzepką-Bastą - Kraków, 10-12 stycznia 2014r. '
+    - 1
+    - 
+    - 6
+    - 1545950_471580822964548_394843341_n.jpg
+    - image/jpeg
+    - 423985
+    - 2015-05-11 15:40:35.000000000 Z
+    - 2015-05-11 15:36:00.000000000 Z
+    - 2015-05-11 16:21:53.000000000 Z
+
+---
+movies:
+  columns:
+  - id
+  - name
+  - position
+  - link
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Widowisko plenerowe z okazji 94 rocznicy Powstania Wielkopolskiego - 2012. 12.
+      29
+    - 2
+    - <iframe width="560" height="315" src="https://www.youtube.com/embed/BjPM4ceP3O4?rel=0"
+      frameborder="0" allowfullscreen></iframe>
+    - 2015-04-12 18:19:36.000000000 Z
+    - 2015-04-22 20:01:39.000000000 Z
+  - - 2
+    - Widowisko plenerowe z okazji 94 rocznicy Powstania Wielkopolskiego - 2012. 12.
+      29 (inna perspektywa)
+    - 1
+    - <iframe width="560" height="315" src="https://www.youtube.com/embed/8xDw9qlt3So?rel=0"
+      frameborder="0" allowfullscreen></iframe>
+    - 2015-04-22 20:01:17.000000000 Z
+    - 2015-04-22 20:02:02.000000000 Z
+
+---
+photos:
+  columns:
+  - id
+  - gallery_id
+  - name
+  - position
+  - img_file_name
+  - img_content_type
+  - img_file_size
+  - img_updated_at
+  - created_at
+  - updated_at
+  records: 
+  - - 6
+    - 5
+    - Etiuda poetycka
+    - 1
+    - PA280597.jpg
+    - image/jpeg
+    - 350758
+    - 2015-04-22 20:30:26.000000000 Z
+    - 2015-04-22 20:30:00.000000000 Z
+    - 2015-04-22 20:30:29.000000000 Z
+  - - 7
+    - 5
+    - Etiuda poetycka
+    - 2
+    - PA280599.jpg
+    - image/jpeg
+    - 333611
+    - 2015-04-22 20:31:06.000000000 Z
+    - 2015-04-22 20:30:00.000000000 Z
+    - 2015-04-22 20:31:11.000000000 Z
+  - - 8
+    - 5
+    - Etiuda poetycka
+    - 3
+    - PA280604.jpg
+    - image/jpeg
+    - 624789
+    - 2015-04-22 20:31:58.000000000 Z
+    - 2015-04-22 20:31:00.000000000 Z
+    - 2015-04-22 20:32:03.000000000 Z
+  - - 9
+    - 5
+    - Etiuda poetycka
+    - 4
+    - PA280592.jpg
+    - image/jpeg
+    - 425623
+    - 2015-04-22 20:32:41.000000000 Z
+    - 2015-04-22 20:32:00.000000000 Z
+    - 2015-04-22 20:32:46.000000000 Z
+  - - 10
+    - 5
+    - Etiuda poetycka
+    - 1
+    - PA280613.jpg
+    - image/jpeg
+    - 532208
+    - 2015-04-22 20:33:09.000000000 Z
+    - 2015-04-22 20:32:00.000000000 Z
+    - 2015-05-11 16:10:04.000000000 Z
+  - - 11
+    - 8
+    - 'Warszaty ruchowo-rytmiczne z Maciejem Dziaczko  '
+    - 1
+    - 148671_471069299595383_958225161_n.jpg
+    - image/jpeg
+    - 229830
+    - 2015-05-11 14:51:24.000000000 Z
+    - 2015-05-11 14:51:00.000000000 Z
+    - 2015-05-11 14:51:25.000000000 Z
+  - - 12
+    - 8
+    - 'Warszaty ruchowo-rytmiczne z Maciejem Dziaczko  '
+    - 2
+    - 184450_276597199129579_674718843_n.jpg
+    - image/jpeg
+    - 202633
+    - 2015-05-11 14:51:53.000000000 Z
+    - 2015-05-11 14:51:00.000000000 Z
+    - 2015-05-11 14:51:54.000000000 Z
+  - - 13
+    - 8
+    - 'Warszaty ruchowo-rytmiczne z Maciejem Dziaczko  '
+    - 3
+    - 398607_471069202928726_1289307571_n.jpg
+    - image/jpeg
+    - 194444
+    - 2015-05-11 14:52:18.000000000 Z
+    - 2015-05-11 14:51:00.000000000 Z
+    - 2015-05-11 14:52:19.000000000 Z
+  - - 14
+    - 8
+    - 'Warszaty ruchowo-rytmiczne z Maciejem Dziaczko  '
+    - 4
+    - 541892_276597202462912_1912826386_n.jpg
+    - image/jpeg
+    - 207537
+    - 2015-05-11 14:52:41.000000000 Z
+    - 2015-05-11 14:52:00.000000000 Z
+    - 2015-05-11 14:52:42.000000000 Z
+  - - 15
+    - 8
+    - 'Warszaty ruchowo-rytmiczne z Maciejem Dziaczko  '
+    - 5
+    - 560813_471069062928740_1193567343_n.jpg
+    - image/jpeg
+    - 208696
+    - 2015-05-11 14:52:58.000000000 Z
+    - 2015-05-11 14:52:00.000000000 Z
+    - 2015-05-11 14:52:59.000000000 Z
+  - - 16
+    - 8
+    - 'Warszaty ruchowo-rytmiczne z Maciejem Dziaczko  '
+    - 6
+    - 603359_276597212462911_1259487957_n.jpg
+    - image/jpeg
+    - 212093
+    - 2015-05-11 14:53:12.000000000 Z
+    - 2015-05-11 14:53:00.000000000 Z
+    - 2015-05-11 14:53:13.000000000 Z
+  - - 17
+    - 8
+    - 'Warszaty ruchowo-rytmiczne z Maciejem Dziaczko 21-22 grudnia 2012r.  '
+    - 7
+    - 312672_471069239595389_604077946_n.jpg
+    - image/jpeg
+    - 249207
+    - 2015-05-11 14:55:30.000000000 Z
+    - 2015-05-11 14:55:00.000000000 Z
+    - 2015-05-11 14:56:19.000000000 Z
+  - - 19
+    - 9
+    - Warsztaty rytmiczno-ruchowe z Niną Wolską- Pruszowską - 05 stycznia 2013r.
+    - 2
+    - 58641_282435078545791_818238067_n.jpg
+    - image/jpeg
+    - 306099
+    - 2015-05-11 15:03:42.000000000 Z
+    - 2015-05-11 15:03:00.000000000 Z
+    - 2015-05-11 15:03:43.000000000 Z
+  - - 20
+    - 9
+    - Warsztaty rytmiczno-ruchowe z Niną Wolską- Pruszowską - 05 stycznia 2013r.
+    - 3
+    - 185636_282434605212505_1711863951_n.jpg
+    - image/jpeg
+    - 353989
+    - 2015-05-11 15:03:58.000000000 Z
+    - 2015-05-11 15:03:00.000000000 Z
+    - 2015-05-11 15:03:59.000000000 Z
+  - - 21
+    - 9
+    - Warsztaty rytmiczno-ruchowe z Niną Wolską- Pruszowską - 05 stycznia 2013r.
+    - 4
+    - 
+    - 
+    - 
+    - 
+    - 2015-05-11 15:04:00.000000000 Z
+    - 2015-05-11 15:04:05.000000000 Z
+  - - 22
+    - 9
+    - Warsztaty rytmiczno-ruchowe z Niną Wolską- Pruszowską - 05 stycznia 2013r.
+    - 5
+    - 206151_282434325212533_1226464123_n.jpg
+    - image/jpeg
+    - 346960
+    - 2015-05-11 15:04:19.000000000 Z
+    - 2015-05-11 15:04:00.000000000 Z
+    - 2015-05-11 15:04:20.000000000 Z
+  - - 23
+    - 9
+    - Warsztaty rytmiczno-ruchowe z Niną Wolską- Pruszowską - 05 stycznia 2013r.
+    - 6
+    - 282983_282434511879181_26075336_n.jpg
+    - image/jpeg
+    - 273208
+    - 2015-05-11 15:04:34.000000000 Z
+    - 2015-05-11 15:04:00.000000000 Z
+    - 2015-05-11 15:04:35.000000000 Z
+  - - 24
+    - 9
+    - Warsztaty rytmiczno-ruchowe z Niną Wolską- Pruszowską - 05 stycznia 2013r.
+    - 7
+    - 400151_282434415212524_1930851623_n.jpg
+    - image/jpeg
+    - 346308
+    - 2015-05-11 15:04:49.000000000 Z
+    - 2015-05-11 15:04:00.000000000 Z
+    - 2015-05-11 15:04:50.000000000 Z
+  - - 25
+    - 9
+    - Warsztaty rytmiczno-ruchowe z Niną Wolską- Pruszowską - 05 stycznia 2013r.
+    - 8
+    - 527292_282434921879140_1054310523_n.jpg
+    - image/jpeg
+    - 339282
+    - 2015-05-11 15:05:04.000000000 Z
+    - 2015-05-11 15:04:00.000000000 Z
+    - 2015-05-11 15:05:06.000000000 Z
+  - - 26
+    - 9
+    - Warsztaty rytmiczno-ruchowe z Niną Wolską- Pruszowską - 05 stycznia 2013r.
+    - 9
+    - 530312_282434581879174_1579355494_n.jpg
+    - image/jpeg
+    - 309303
+    - 2015-05-11 15:05:21.000000000 Z
+    - 2015-05-11 15:05:00.000000000 Z
+    - 2015-05-11 15:05:23.000000000 Z
+  - - 27
+    - 9
+    - Warsztaty rytmiczno-ruchowe z Niną Wolską- Pruszowską - 05 stycznia 2013r.
+    - 10
+    - 545134_282434961879136_1202728332_n.jpg
+    - image/jpeg
+    - 332847
+    - 2015-05-11 15:05:46.000000000 Z
+    - 2015-05-11 15:05:00.000000000 Z
+    - 2015-05-11 15:05:47.000000000 Z
+  - - 28
+    - 9
+    - Warsztaty rytmiczno-ruchowe z Niną Wolską- Pruszowską - 05 stycznia 2013r.
+    - 11
+    - 
+    - 
+    - 
+    - 
+    - 2015-05-11 15:05:00.000000000 Z
+    - 2015-05-11 15:05:57.000000000 Z
+  - - 29
+    - 9
+    - Warsztaty rytmiczno-ruchowe z Niną Wolską- Pruszowską - 05 stycznia 2013r.
+    - 12
+    - 553162_282434461879186_1643994458_n.jpg
+    - image/jpeg
+    - 329177
+    - 2015-05-11 15:06:12.000000000 Z
+    - 2015-05-11 15:06:00.000000000 Z
+    - 2015-05-11 15:06:13.000000000 Z
+  - - 30
+    - 9
+    - Warsztaty rytmiczno-ruchowe z Niną Wolską- Pruszowską - 05 stycznia 2013r.
+    - 13
+    - 603237_282434345212531_1055953754_n.jpg
+    - image/jpeg
+    - 338140
+    - 2015-05-11 15:06:25.000000000 Z
+    - 2015-05-11 15:06:00.000000000 Z
+    - 2015-05-11 15:06:26.000000000 Z
+  - - 31
+    - 10
+    - Warsztaty z aktorami teatru Terminus A Quo - 01 marca 2013r.
+    - 1
+    - P3010266.jpg
+    - image/jpeg
+    - 532882
+    - 2015-05-11 15:09:14.000000000 Z
+    - 2015-05-11 15:08:00.000000000 Z
+    - 2015-05-11 15:09:15.000000000 Z
+  - - 32
+    - 10
+    - Warsztaty z aktorami teatru Terminus A Quo - 01 marca 2013r.
+    - 2
+    - P3010268.jpg
+    - image/jpeg
+    - 583106
+    - 2015-05-11 15:09:44.000000000 Z
+    - 2015-05-11 15:09:00.000000000 Z
+    - 2015-05-11 15:09:45.000000000 Z
+  - - 33
+    - 10
+    - Warsztaty z aktorami teatru Terminus A Quo - 01 marca 2013r.
+    - 3
+    - P3010267.jpg
+    - image/jpeg
+    - 563454
+    - 2015-05-11 15:10:08.000000000 Z
+    - 2015-05-11 15:09:00.000000000 Z
+    - 2015-05-11 15:10:09.000000000 Z
+  - - 34
+    - 10
+    - Warsztaty z aktorami teatru Terminus A Quo - 01 marca 2013r.
+    - 4
+    - P3010273.jpg
+    - image/jpeg
+    - 571873
+    - 2015-05-11 15:10:29.000000000 Z
+    - 2015-05-11 15:10:00.000000000 Z
+    - 2015-05-11 15:10:30.000000000 Z
+  - - 35
+    - 10
+    - Warsztaty z aktorami teatru Terminus A Quo - 01 marca 2013r.
+    - 5
+    - P3010274.jpg
+    - image/jpeg
+    - 519824
+    - 2015-05-11 15:10:44.000000000 Z
+    - 2015-05-11 15:10:00.000000000 Z
+    - 2015-05-11 15:10:45.000000000 Z
+  - - 36
+    - 10
+    - Warsztaty z aktorami teatru Terminus A Quo - 01 marca 2013r.
+    - 6
+    - P3010275.jpg
+    - image/jpeg
+    - 591769
+    - 2015-05-11 15:10:59.000000000 Z
+    - 2015-05-11 15:10:00.000000000 Z
+    - 2015-05-11 15:11:02.000000000 Z
+  - - 37
+    - 10
+    - Warsztaty z aktorami teatru Terminus A Quo - 01 marca 2013r.
+    - 7
+    - P3010276.jpg
+    - image/jpeg
+    - 549465
+    - 2015-05-11 15:11:14.000000000 Z
+    - 2015-05-11 15:11:00.000000000 Z
+    - 2015-05-11 15:11:16.000000000 Z
+  - - 38
+    - 10
+    - Warsztaty z aktorami teatru Terminus A Quo - 01 marca 2013r.
+    - 8
+    - P3010277.jpg
+    - image/jpeg
+    - 512994
+    - 2015-05-11 15:11:30.000000000 Z
+    - 2015-05-11 15:11:00.000000000 Z
+    - 2015-05-11 15:11:32.000000000 Z
+  - - 39
+    - 10
+    - Warsztaty z aktorami teatru Terminus A Quo - 01 marca 2013r.
+    - 9
+    - P3010279.jpg
+    - image/jpeg
+    - 629705
+    - 2015-05-11 15:11:50.000000000 Z
+    - 2015-05-11 15:11:00.000000000 Z
+    - 2015-05-11 15:11:52.000000000 Z
+  - - 40
+    - 10
+    - Warsztaty z aktorami teatru Terminus A Quo - 01 marca 2013r.
+    - 10
+    - P3010280.jpg
+    - image/jpeg
+    - 576387
+    - 2015-05-11 15:12:05.000000000 Z
+    - 2015-05-11 15:11:00.000000000 Z
+    - 2015-05-11 15:12:07.000000000 Z
+  - - 41
+    - 10
+    - Warsztaty z aktorami teatru Terminus A Quo - 01 marca 2013r.
+    - 11
+    - P3010282.jpg
+    - image/jpeg
+    - 585835
+    - 2015-05-11 15:12:20.000000000 Z
+    - 2015-05-11 15:12:00.000000000 Z
+    - 2015-05-11 15:12:22.000000000 Z
+  - - 42
+    - 10
+    - Warsztaty z aktorami teatru Terminus A Quo - 01 marca 2013r.
+    - 12
+    - P3010283.jpg
+    - image/jpeg
+    - 546256
+    - 2015-05-11 15:12:37.000000000 Z
+    - 2015-05-11 15:12:00.000000000 Z
+    - 2015-05-11 15:12:40.000000000 Z
+  - - 43
+    - 10
+    - Warsztaty z aktorami teatru Terminus A Quo - 01 marca 2013r.
+    - 13
+    - P3010284.jpg
+    - image/jpeg
+    - 454340
+    - 2015-05-11 15:12:53.000000000 Z
+    - 2015-05-11 15:12:00.000000000 Z
+    - 2015-05-11 15:12:55.000000000 Z
+  - - 44
+    - 10
+    - Warsztaty z aktorami teatru Terminus A Quo - 01 marca 2013r.
+    - 14
+    - P3010285.jpg
+    - image/jpeg
+    - 568306
+    - 2015-05-11 15:13:13.000000000 Z
+    - 2015-05-11 15:13:00.000000000 Z
+    - 2015-05-11 15:13:16.000000000 Z
+  - - 45
+    - 10
+    - Warsztaty z aktorami teatru Terminus A Quo - 01 marca 2013r.
+    - 15
+    - P3010286.jpg
+    - image/jpeg
+    - 500924
+    - 2015-05-11 15:13:32.000000000 Z
+    - 2015-05-11 15:13:00.000000000 Z
+    - 2015-05-11 15:13:36.000000000 Z
+  - - 46
+    - 10
+    - Warsztaty z aktorami teatru Terminus A Quo - 01 marca 2013r.
+    - 16
+    - P3010287.jpg
+    - image/jpeg
+    - 560201
+    - 2015-05-11 15:13:56.000000000 Z
+    - 2015-05-11 15:13:00.000000000 Z
+    - 2015-05-11 15:14:07.000000000 Z
+  - - 47
+    - 10
+    - Warsztaty z aktorami teatru Terminus A Quo - 01 marca 2013r.
+    - 17
+    - P3010288.jpg
+    - image/jpeg
+    - 513654
+    - 2015-05-11 15:14:28.000000000 Z
+    - 2015-05-11 15:14:00.000000000 Z
+    - 2015-05-11 15:14:35.000000000 Z
+  - - 48
+    - 10
+    - Warsztaty z aktorami teatru Terminus A Quo - 01 marca 2013r.
+    - 18
+    - P3010289.jpg
+    - image/jpeg
+    - 430659
+    - 2015-05-11 15:14:57.000000000 Z
+    - 2015-05-11 15:14:00.000000000 Z
+    - 2015-05-11 15:14:59.000000000 Z
+  - - 49
+    - 10
+    - Warsztaty z aktorami teatru Terminus A Quo - 01 marca 2013r.
+    - 19
+    - PIC_0194.jpg
+    - image/jpeg
+    - 270599
+    - 2015-05-11 15:15:22.000000000 Z
+    - 2015-05-11 15:15:00.000000000 Z
+    - 2015-05-11 15:15:26.000000000 Z
+  - - 50
+    - 10
+    - Warsztaty z aktorami teatru Terminus A Quo - 01 marca 2013r.
+    - 20
+    - PIC_0195.jpg
+    - image/jpeg
+    - 246497
+    - 2015-05-11 15:15:44.000000000 Z
+    - 2015-05-11 15:15:00.000000000 Z
+    - 2015-05-11 15:15:48.000000000 Z
+  - - 52
+    - 10
+    - Warsztaty z aktorami teatru Terminus A Quo - 01 marca 2013r.
+    - 22
+    - PIC_0203.jpg
+    - image/jpeg
+    - 266231
+    - 2015-05-11 15:16:59.000000000 Z
+    - 2015-05-11 15:16:00.000000000 Z
+    - 2015-05-11 15:17:00.000000000 Z
+  - - 53
+    - 10
+    - Warsztaty z aktorami teatru Terminus A Quo - 01 marca 2013r.
+    - 22
+    - PIC_0201.jpg
+    - image/jpeg
+    - 198218
+    - 2015-05-11 15:17:34.000000000 Z
+    - 2015-05-11 15:17:00.000000000 Z
+    - 2015-05-11 15:17:37.000000000 Z
+  - - 54
+    - 11
+    - Warsztaty taneczne z Alsu Sabirova - czerwiec 2013r.
+    - 1
+    - w.1.jpg
+    - image/jpeg
+    - 259316
+    - 2015-05-11 15:20:39.000000000 Z
+    - 2015-05-11 15:20:00.000000000 Z
+    - 2015-05-11 15:20:44.000000000 Z
+  - - 55
+    - 11
+    - Warsztaty taneczne z Alsu Sabirova - czerwiec 2013r.
+    - 2
+    - w.2.jpg
+    - image/jpeg
+    - 302325
+    - 2015-05-11 15:21:17.000000000 Z
+    - 2015-05-11 15:20:00.000000000 Z
+    - 2015-05-11 15:21:22.000000000 Z
+  - - 56
+    - 11
+    - Warsztaty taneczne z Alsu Sabirova - czerwiec 2013r.
+    - 3
+    - w.3.jpg
+    - image/jpeg
+    - 412164
+    - 2015-05-11 15:21:37.000000000 Z
+    - 2015-05-11 15:21:00.000000000 Z
+    - 2015-05-11 15:21:41.000000000 Z
+  - - 57
+    - 11
+    - Warsztaty taneczne z Alsu Sabirova - czerwiec 2013r.
+    - 4
+    - w.4.jpg
+    - image/jpeg
+    - 341871
+    - 2015-05-11 15:22:04.000000000 Z
+    - 2015-05-11 15:21:00.000000000 Z
+    - 2015-05-11 15:22:10.000000000 Z
+  - - 58
+    - 11
+    - Warsztaty taneczne z Alsu Sabirova - czerwiec 2013r.
+    - 5
+    - w.5.jpg
+    - image/jpeg
+    - 238446
+    - 2015-05-11 15:22:22.000000000 Z
+    - 2015-05-11 15:22:00.000000000 Z
+    - 2015-05-11 15:22:25.000000000 Z
+  - - 59
+    - 11
+    - Warsztaty taneczne z Alsu Sabirova - czerwiec 2013r.
+    - 6
+    - w.6.jpg
+    - image/jpeg
+    - 359871
+    - 2015-05-11 15:22:37.000000000 Z
+    - 2015-05-11 15:22:00.000000000 Z
+    - 2015-05-11 15:22:46.000000000 Z
+  - - 60
+    - 11
+    - Warsztaty taneczne z Alsu Sabirova - czerwiec 2013r.
+    - 7
+    - w.7.jpg
+    - image/jpeg
+    - 241793
+    - 2015-05-11 15:23:03.000000000 Z
+    - 2015-05-11 15:22:00.000000000 Z
+    - 2015-05-11 15:23:06.000000000 Z
+  - - 61
+    - 11
+    - Warsztaty taneczne z Alsu Sabirova - czerwiec 2013r.
+    - 8
+    - w.8.jpg
+    - image/jpeg
+    - 233299
+    - 2015-05-11 15:23:24.000000000 Z
+    - 2015-05-11 15:23:00.000000000 Z
+    - 2015-05-11 15:23:26.000000000 Z
+  - - 62
+    - 11
+    - Warsztaty taneczne z Alsu Sabirova - czerwiec 2013r.
+    - 9
+    - warszaty_3.jpg
+    - image/jpeg
+    - 240239
+    - 2015-05-11 15:24:02.000000000 Z
+    - 2015-05-11 15:23:00.000000000 Z
+    - 2015-05-11 15:24:12.000000000 Z
+  - - 63
+    - 11
+    - Warsztaty taneczne z Alsu Sabirova - czerwiec 2013r.
+    - 10
+    - warsztaty_8.jpg
+    - image/jpeg
+    - 289611
+    - 2015-05-11 15:24:38.000000000 Z
+    - 2015-05-11 15:24:00.000000000 Z
+    - 2015-05-11 15:24:44.000000000 Z
+  - - 65
+    - 11
+    - Warsztaty taneczne z Alsu Sabirova - czerwiec 2013r.
+    - 12
+    - warsztaty_7.jpg
+    - image/jpeg
+    - 238611
+    - 2015-05-11 15:25:28.000000000 Z
+    - 2015-05-11 15:25:00.000000000 Z
+    - 2015-05-11 15:25:35.000000000 Z
+  - - 69
+    - 11
+    - Warsztaty taneczne z Alsu Sabirova - czerwiec 2013r.
+    - 14
+    - warsztaty_5.jpg
+    - image/jpeg
+    - 286012
+    - 2015-05-11 15:26:50.000000000 Z
+    - 2015-05-11 15:26:00.000000000 Z
+    - 2015-05-11 15:26:56.000000000 Z
+  - - 70
+    - 11
+    - Warsztaty taneczne z Alsu Sabirova - czerwiec 2013r.
+    - 13
+    - warsztaty_9.jpg
+    - image/jpeg
+    - 331824
+    - 2015-05-11 15:28:44.000000000 Z
+    - 2015-05-11 15:28:00.000000000 Z
+    - 2015-05-11 15:28:49.000000000 Z
+  - - 71
+    - 12
+    - 'Warsztaty teatralne z Agnieszką Rzepką-Bastą - Kraków, 10-12 stycznia 2014r. '
+    - 1
+    - 482475_471582326297731_1474680224_n.jpg
+    - image/jpeg
+    - 338497
+    - 2015-05-11 15:41:14.000000000 Z
+    - 2015-05-11 15:41:00.000000000 Z
+    - 2015-05-11 15:41:19.000000000 Z
+  - - 72
+    - 12
+    - 'Warsztaty teatralne z Agnieszką Rzepką-Bastą - Kraków, 10-12 stycznia 2014r. '
+    - 2
+    - 482494_473348912787739_706355700_n.jpg
+    - image/jpeg
+    - 179672
+    - 2015-05-11 15:41:35.000000000 Z
+    - 2015-05-11 15:41:00.000000000 Z
+    - 2015-05-11 15:41:41.000000000 Z
+  - - 73
+    - 12
+    - 'Warsztaty teatralne z Agnieszką Rzepką-Bastą - Kraków, 10-12 stycznia 2014r. '
+    - 3
+    - 522439_473349732787657_1294310613_n.jpg
+    - image/jpeg
+    - 203930
+    - 2015-05-11 15:41:58.000000000 Z
+    - 2015-05-11 15:41:00.000000000 Z
+    - 2015-05-11 15:42:04.000000000 Z
+  - - 74
+    - 12
+    - 'Warsztaty teatralne z Agnieszką Rzepką-Bastą - Kraków, 10-12 stycznia 2014r. '
+    - 4
+    - 1011217_471581066297857_369601455_n.jpg
+    - image/jpeg
+    - 207289
+    - 2015-05-11 15:42:32.000000000 Z
+    - 2015-05-11 15:42:00.000000000 Z
+    - 2015-05-11 15:42:37.000000000 Z
+  - - 75
+    - 12
+    - 'Warsztaty teatralne z Agnieszką Rzepką-Bastą - Kraków, 10-12 stycznia 2014r. '
+    - 5
+    - 1012136_471581359631161_1337734146_n.jpg
+    - image/jpeg
+    - 291802
+    - 2015-05-11 15:42:53.000000000 Z
+    - 2015-05-11 15:42:00.000000000 Z
+    - 2015-05-11 15:42:57.000000000 Z
+  - - 76
+    - 12
+    - 'Warsztaty teatralne z Agnieszką Rzepką-Bastą - Kraków, 10-12 stycznia 2014r. '
+    - 6
+    - 1017137_473350849454212_1001981366_n.jpg
+    - image/jpeg
+    - 337411
+    - 2015-05-11 15:43:18.000000000 Z
+    - 2015-05-11 15:43:00.000000000 Z
+    - 2015-05-11 15:43:22.000000000 Z
+  - - 77
+    - 12
+    - 'Warsztaty teatralne z Agnieszką Rzepką-Bastą - Kraków, 10-12 stycznia 2014r. '
+    - 7
+    - 1043938_471580262964604_1566657929_n.jpg
+    - image/jpeg
+    - 320085
+    - 2015-05-11 15:43:40.000000000 Z
+    - 2015-05-11 15:43:00.000000000 Z
+    - 2015-05-11 15:43:43.000000000 Z
+  - - 78
+    - 12
+    - 'Warsztaty teatralne z Agnieszką Rzepką-Bastą - Kraków, 10-12 stycznia 2014r. '
+    - 8
+    - 1495512_471581369631160_1539882137_n.jpg
+    - image/jpeg
+    - 150912
+    - 2015-05-11 15:44:01.000000000 Z
+    - 2015-05-11 15:43:00.000000000 Z
+    - 2015-05-11 15:44:07.000000000 Z
+  - - 79
+    - 12
+    - 'Warsztaty teatralne z Agnieszką Rzepką-Bastą - Kraków, 10-12 stycznia 2014r. '
+    - 9
+    - 1512656_473349956120968_498588573_n.jpg
+    - image/jpeg
+    - 404697
+    - 2015-05-11 15:44:38.000000000 Z
+    - 2015-05-11 15:44:00.000000000 Z
+    - 2015-05-11 15:44:44.000000000 Z
+  - - 80
+    - 12
+    - 'Warsztaty teatralne z Agnieszką Rzepką-Bastą - Kraków, 10-12 stycznia 2014r. '
+    - 10
+    - 1515007_471580466297917_927194843_n.jpg
+    - image/jpeg
+    - 296730
+    - 2015-05-11 15:45:05.000000000 Z
+    - 2015-05-11 15:44:00.000000000 Z
+    - 2015-05-11 15:45:09.000000000 Z
+  - - 81
+    - 12
+    - 'Warsztaty teatralne z Agnieszką Rzepką-Bastą - Kraków, 10-12 stycznia 2014r. '
+    - 11
+    - 1517611_473350639454233_124362849_n.jpg
+    - image/jpeg
+    - 273261
+    - 2015-05-11 15:45:27.000000000 Z
+    - 2015-05-11 15:45:00.000000000 Z
+    - 2015-05-11 15:45:33.000000000 Z
+  - - 82
+    - 12
+    - 'Warsztaty teatralne z Agnieszką Rzepką-Bastą - Kraków, 10-12 stycznia 2014r. '
+    - 11
+    - 1517611_473350639454233_124362849_n.jpg
+    - image/jpeg
+    - 273261
+    - 2015-05-11 15:45:37.000000000 Z
+    - 2015-05-11 15:45:00.000000000 Z
+    - 2015-05-11 15:45:38.000000000 Z
+  - - 83
+    - 12
+    - 'Warsztaty teatralne z Agnieszką Rzepką-Bastą - Kraków, 10-12 stycznia 2014r. '
+    - 13
+    - 1521989_471580202964610_776159040_n.jpg
+    - image/jpeg
+    - 245915
+    - 2015-05-11 15:45:57.000000000 Z
+    - 2015-05-11 15:45:00.000000000 Z
+    - 2015-05-11 15:46:05.000000000 Z
+  - - 84
+    - 12
+    - 'Warsztaty teatralne z Agnieszką Rzepką-Bastą - Kraków, 10-12 stycznia 2014r. '
+    - 14
+    - 1528634_473350672787563_18269418_n.jpg
+    - image/jpeg
+    - 174145
+    - 2015-05-11 15:46:36.000000000 Z
+    - 2015-05-11 15:46:00.000000000 Z
+    - 2015-05-11 15:46:39.000000000 Z
+  - - 85
+    - 12
+    - 'Warsztaty teatralne z Agnieszką Rzepką-Bastą - Kraków, 10-12 stycznia 2014r. '
+    - 15
+    - 1528683_471580426297921_280287349_n.jpg
+    - image/jpeg
+    - 402353
+    - 2015-05-11 15:46:57.000000000 Z
+    - 2015-05-11 15:46:00.000000000 Z
+    - 2015-05-11 15:47:00.000000000 Z
+  - - 86
+    - 12
+    - 'Warsztaty teatralne z Agnieszką Rzepką-Bastą - Kraków, 10-12 stycznia 2014r. '
+    - 16
+    - 1531836_471581262964504_364816038_n.jpg
+    - image/jpeg
+    - 323302
+    - 2015-05-11 15:47:35.000000000 Z
+    - 2015-05-11 15:47:00.000000000 Z
+    - 2015-05-11 15:47:38.000000000 Z
+  - - 87
+    - 12
+    - 'Warsztaty teatralne z Agnieszką Rzepką-Bastą - Kraków, 10-12 stycznia 2014r. '
+    - 17
+    - 1533862_473350162787614_1852321876_n.jpg
+    - image/jpeg
+    - 220893
+    - 2015-05-11 15:48:02.000000000 Z
+    - 2015-05-11 15:47:00.000000000 Z
+    - 2015-05-11 15:48:04.000000000 Z
+  - - 88
+    - 12
+    - 'Warsztaty teatralne z Agnieszką Rzepką-Bastą - Kraków, 10-12 stycznia 2014r. '
+    - 18
+    - 1536704_471581842964446_241766779_n.jpg
+    - image/jpeg
+    - 288567
+    - 2015-05-11 15:48:32.000000000 Z
+    - 2015-05-11 15:48:00.000000000 Z
+    - 2015-05-11 15:48:36.000000000 Z
+  - - 89
+    - 12
+    - 'Warsztaty teatralne z Agnieszką Rzepką-Bastą - Kraków, 10-12 stycznia 2014r. '
+    - 19
+    - 1545989_473349069454390_1438218390_n.jpg
+    - image/jpeg
+    - 246543
+    - 2015-05-11 15:49:04.000000000 Z
+    - 2015-05-11 15:48:00.000000000 Z
+    - 2015-05-11 15:49:07.000000000 Z
+  - - 90
+    - 12
+    - 'Warsztaty teatralne z Agnieszką Rzepką-Bastą - Kraków, 10-12 stycznia 2014r. '
+    - 20
+    - 1546399_471581046297859_1887056591_n.jpg
+    - image/jpeg
+    - 255211
+    - 2015-05-11 15:49:33.000000000 Z
+    - 2015-05-11 15:49:00.000000000 Z
+    - 2015-05-11 15:49:35.000000000 Z
+  - - 91
+    - 12
+    - 'Warsztaty teatralne z Agnieszką Rzepką-Bastą - Kraków, 10-12 stycznia 2014r. '
+    - 21
+    - 1551709_471581942964436_920519543_n.jpg
+    - image/jpeg
+    - 374224
+    - 2015-05-11 15:50:05.000000000 Z
+    - 2015-05-11 15:49:00.000000000 Z
+    - 2015-05-11 15:50:06.000000000 Z
+  - - 92
+    - 12
+    - 'Warsztaty teatralne z Agnieszką Rzepką-Bastą - Kraków, 10-12 stycznia 2014r. '
+    - 22
+    - 1557595_471580222964608_707992455_n.jpg
+    - image/jpeg
+    - 218069
+    - 2015-05-11 15:50:38.000000000 Z
+    - 2015-05-11 15:50:00.000000000 Z
+    - 2015-05-11 15:50:43.000000000 Z
+  - - 93
+    - 12
+    - 'Warsztaty teatralne z Agnieszką Rzepką-Bastą - Kraków, 10-12 stycznia 2014r. '
+    - 23
+    - 1601598_473349436121020_1299820412_n.jpg
+    - image/jpeg
+    - 276548
+    - 2015-05-11 15:51:25.000000000 Z
+    - 2015-05-11 15:51:00.000000000 Z
+    - 2015-05-11 15:51:28.000000000 Z
+  - - 94
+    - 12
+    - 'Warsztaty teatralne z Agnieszką Rzepką-Bastą - Kraków, 10-12 stycznia 2014r. '
+    - 24
+    - 
+    - 
+    - 
+    - 
+    - 2015-05-11 15:51:00.000000000 Z
+    - 2015-05-11 15:51:38.000000000 Z
+  - - 95
+    - 12
+    - 'Warsztaty teatralne z Agnieszką Rzepką-Bastą - Kraków, 10-12 stycznia 2014r. '
+    - 25
+    - 1604388_471580729631224_1274813975_n.jpg
+    - image/jpeg
+    - 273304
+    - 2015-05-11 15:52:18.000000000 Z
+    - 2015-05-11 15:51:00.000000000 Z
+    - 2015-05-11 15:52:20.000000000 Z
+  - - 96
+    - 12
+    - 'Warsztaty teatralne z Agnieszką Rzepką-Bastą - Kraków, 10-12 stycznia 2014r. '
+    - 26
+    - 1515007_471580466297917_927194843_n.jpg
+    - image/jpeg
+    - 296730
+    - 2015-05-11 15:52:43.000000000 Z
+    - 2015-05-11 15:52:00.000000000 Z
+    - 2015-05-11 15:52:48.000000000 Z
+  - - 97
+    - 12
+    - 'Warsztaty teatralne z Agnieszką Rzepką-Bastą - Kraków, 10-12 stycznia 2014r. '
+    - 27
+    - 1604577_471580906297873_244952808_n.jpg
+    - image/jpeg
+    - 211417
+    - 2015-05-11 15:53:33.000000000 Z
+    - 2015-05-11 15:53:00.000000000 Z
+    - 2015-05-11 15:53:36.000000000 Z
+  - - 98
+    - 12
+    - 'Warsztaty teatralne z Agnieszką Rzepką-Bastą - Kraków, 10-12 stycznia 2014r. '
+    - 28
+    - 1604920_471582242964406_362051440_n.jpg
+    - image/jpeg
+    - 275092
+    - 2015-05-11 15:54:28.000000000 Z
+    - 2015-05-11 15:53:00.000000000 Z
+    - 2015-05-11 15:54:31.000000000 Z
+  - - 99
+    - 12
+    - 'Warsztaty teatralne z Agnieszką Rzepką-Bastą - Kraków, 10-12 stycznia 2014r. '
+    - 29
+    - 1606961_471581716297792_1852327689_n.jpg
+    - image/jpeg
+    - 315421
+    - 2015-05-11 15:55:18.000000000 Z
+    - 2015-05-11 15:55:00.000000000 Z
+    - 2015-05-11 15:55:31.000000000 Z
+
+---
+posts:
+  columns:
+  - id
+  - name
+  - teaser
+  - link
+  - position
+  - text
+  - img_file_name
+  - img_content_type
+  - img_file_size
+  - img_updated_at
+  - file_file_name
+  - file_content_type
+  - file_file_size
+  - file_updated_at
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Pierwszy Post
+    - Ciekawe rzeczy się działy ostatnio na próbie, mówie Wam
+    - ''
+    - 1
+    - 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget
+      purus lacinia, commodo est eget, condimentum arcu. Nulla ultrices lectus tellus,
+      ornare placerat purus aliquam ac. Aliquam quis libero ut lectus lobortis consectetur
+      ac non dui. Duis diam lorem, aliquet et luctus nec, venenatis vel urna. Fusce
+      massa erat, vehicula in nulla vitae, interdum ultrices justo. Integer auctor
+      molestie lorem, nec sollicitudin dui rhoncus laoreet. Vestibulum sit amet massa
+      in dolor pharetra viverra eu eget mauris. Praesent fermentum est ac enim iaculis
+      vulputate. Sed commodo eu nunc quis blandit. Sed in risus mattis, hendrerit
+      velit commodo, dictum felis. Suspendisse dapibus sit amet quam at pellentesque. '
+    - post_1.jpg
+    - image/jpeg
+    - 96279
+    - 2015-04-12 17:43:03.000000000 Z
+    - 
+    - 
+    - 
+    - 
+    - 2015-04-12 17:43:04.000000000 Z
+    - 2015-04-13 09:04:55.000000000 Z
+  - - 2
+    - Post Drugi
+    - Byliśmy w Krakowie i było fajno.
+    - '12'
+    - 2
+    - 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget
+      purus lacinia, commodo est eget, condimentum arcu. Nulla ultrices lectus tellus,
+      ornare placerat purus aliquam ac. Aliquam quis libero ut lectus lobortis consectetur
+      ac non dui. Duis diam lorem, aliquet et luctus nec, venenatis vel urna. Fusce
+      massa erat, vehicula in nulla vitae, interdum ultrices justo. Integer auctor
+      molestie lorem, nec sollicitudin dui rhoncus laoreet. Vestibulum sit amet massa
+      in dolor pharetra viverra eu eget mauris. Praesent fermentum est ac enim iaculis
+      vulputate. Sed commodo eu nunc quis blandit. Sed in risus mattis, hendrerit
+      velit commodo, dictum felis. Suspendisse dapibus sit amet quam at pellentesque. '
+    - tlo_efekt.jpg
+    - image/jpeg
+    - 45237
+    - 2015-04-12 17:50:11.000000000 Z
+    - 
+    - 
+    - 
+    - 
+    - 2015-04-12 17:49:52.000000000 Z
+    - 2015-05-11 19:08:04.000000000 Z
+  - - 3
+    - Trzeci post...
+    - wprowadzenie
+    - '11'
+    - 3
+    - treść test test test test test test test test test test test test test test
+    - krzesla.jpg
+    - image/jpeg
+    - 142491
+    - 2015-04-13 00:33:36.000000000 Z
+    - 
+    - 
+    - 
+    - 
+    - 2015-04-13 00:33:37.000000000 Z
+    - 2015-05-11 19:06:22.000000000 Z
+
+---
+sliders:
+  columns:
+  - id
+  - name
+  - text
+  - position
+  - img_file_name
+  - img_content_type
+  - img_file_size
+  - img_updated_at
+  - created_at
+  - updated_at
+  records: 
+  - - 4
+    - " Jak zreformować mężczyznę wg W. Bruce’a Cameron’a 2009 "
+    - '"Kobiety kupują chętnie mężczyznę gotowego, prosto z półki, potem chcą zabrać
+      go do domu i dokonać przeróbek"'
+    - 1
+    - 1._Jak_zreformować_mężczyznę.jpg
+    - image/jpeg
+    - 413742
+    - 2015-05-10 13:36:58.000000000 Z
+    - 2015-05-10 13:36:59.000000000 Z
+    - 2015-05-10 14:39:11.000000000 Z
+  - - 5
+    - Jak wytrzymać z nastolatką wg W. Bruce’a Cameron’a   2010
+    - Rady ojca, który przeżył domowy kataklizm
+    - 2
+    - P3260760.jpg
+    - image/jpeg
+    - 608556
+    - 2015-05-10 14:44:21.000000000 Z
+    - 2015-05-10 13:42:59.000000000 Z
+    - 2015-05-10 14:44:24.000000000 Z
+  - - 6
+    - "Śpiąca Królewna wg Bogusława Kierca 2012 "
+    - ' "Jaki on piękny! Wierzga, podskakuje, zajęty tańcem z samym sobą, wokół siebie
+      samego."'
+    - 3
+    - 399181_266501520139147_660689336_n.jpg
+    - image/jpeg
+    - 26033
+    - 2015-05-10 14:47:27.000000000 Z
+    - 2015-05-10 13:45:06.000000000 Z
+    - 2015-05-10 14:47:28.000000000 Z
+  - - 7
+    - Widowisko plenerowe z okazji 94 rocznicy Powstania Wielkopolskiego 2012
+    - ''
+    - 4
+    - 4._Widowisko_plenerowe_z_okazji_94_rocznicy_Powstania_Wielkopolskiego_2012.jpg
+    - image/jpeg
+    - 193324
+    - 2015-05-10 13:46:11.000000000 Z
+    - 2015-05-10 13:46:12.000000000 Z
+    - 2015-05-10 13:55:19.000000000 Z
+  - - 8
+    - '"Kaszalot" Marty Guśniowskiej  2013'
+    - '"Połknąłeś?! I jak ja mam teraz dokończyć historię?!"'
+    - 5
+    - 5.Kaszalot_Marty_Guśniowskiej__2013.jpg
+    - image/jpeg
+    - 271873
+    - 2015-05-10 13:47:40.000000000 Z
+    - 2015-05-10 13:47:41.000000000 Z
+    - 2015-05-10 13:55:36.000000000 Z
+  - - 9
+    - Plenerowa ilustracja artystyczna z okazji Wojewódzkich Obchodów Wielkopolskiej
+      Wiosny Ludów w Sokołowie 2013
+    - ''
+    - 6
+    - 375092_343113012477997_1851485721_n.jpg
+    - image/jpeg
+    - 56071
+    - 2015-05-10 14:21:15.000000000 Z
+    - 2015-05-10 13:48:40.000000000 Z
+    - 2015-05-10 14:21:16.000000000 Z
+  - - 10
+    - '"Opowieści z JaMy" spektakl autorski 2014/2015'
+    - '"My jesteśmy jedyną własną myślą staliśmy się potrzebni sami sobie I nigdy
+      naprawdę nie będziemy indywidualistami"'
+    - 7
+    - 1.JPG
+    - image/jpeg
+    - 144760
+    - 2015-05-10 13:59:47.000000000 Z
+    - 2015-05-10 13:59:03.000000000 Z
+    - 2015-05-10 18:49:54.000000000 Z
+
+---
+types:
+  columns:
+  - id
+  - name
+  - position
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Galerie Zdjęć
+    - 1
+    - 2015-04-09 17:22:00.000000000 Z
+    - 2015-04-12 17:24:07.000000000 Z
+
+---
+users:
+  columns:
+  - id
+  - position
+  - name
+  - surname
+  - user
+  - link
+  - text
+  - img_file_name
+  - img_content_type
+  - img_file_size
+  - img_updated_at
+  - email
+  - password_digest
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 3
+    - Marta
+    - Barwinek
+    - Marta1
+    - https://www.facebook.com/marta.barwinek
+    - W Teatrze Otczapy działa od 2010r, pełni w nim najważniejszą rolę- rolę wesołka
+      grupowego!  Nie lubi się nudzić, jest szczera, otwarta, niesamowicie uparta,
+      zawsze uśmiechnięta, piękna i niesamowicie skromna! ;)
+    - 10454941_1502817753281427_2779005902174141278_o.jpg
+    - image/jpeg
+    - 80449
+    - 2015-04-14 16:49:16.000000000 Z
+    - marta.barwinek@gmail.com
+    - "$2a$10$D3QVrgxmco/kUkDu6iiXaOWDiMcT2pNRgxjyIF30qLiG93MgUWQi."
+    - 2015-04-12 17:22:27.000000000 Z
+    - 2015-04-17 17:00:20.000000000 Z
+  - - 9
+    - 2
+    - Damian
+    - Tomczyk
+    - damian1271
+    - https://www.facebook.com/damian1271
+    - Z Teatrem Otczapy związany od 2014 roku. Młody, ambitny, lecz leniwy. Fanatyk
+      polskiego rapu, wielbiciel kina science-fiction,  teatru. Amatorsko gra w koszykówkę,
+      uwielbia spędzać czas z przyjaciółmi :)
+    - ja.jpg
+    - image/jpeg
+    - 7151
+    - 2015-04-13 19:50:55.000000000 Z
+    - dtomczyk17@gmail.com
+    - "$2a$10$MljqyfyDTYPic3R5IaZl7.Kj4xvAM1DFu.ICVVyk5gQeuUNjER.TG"
+    - 2015-04-13 19:50:59.000000000 Z
+    - 2015-05-10 19:01:32.000000000 Z
+  - - 10
+    - 1
+    - Nie ruszać
+    - admin
+    - Admin
+    - ''
+    - ''
+    - 
+    - 
+    - 
+    - 
+    - admin@o2.pl
+    - "$2a$10$0OwwxS/YGnqYsc2YPMBurOjUmCjsShPro2U5SivZbcgMZ2wlJqg1K"
+    - 2015-04-16 15:29:31.000000000 Z
+    - 2015-04-16 15:33:19.000000000 Z
+  - - 11
+    - 5
+    - Kasia
+    - Piechnik
+    - cathleen97
+    - https://www.facebook.com/cathleen97
+    - Zakochana w teatrze, a w tym Otczapy już od dwóch lat. Szuka siebie na scenie,
+      w literaturze i wielu innych przestrzeniach. Przekonana o tym, że do wszystkiego
+      można dojść ciężką pracą, a przede wszystkim wiarą w niemożliwe!
+    - 10485150_702211719815862_956130260_n.jpg
+    - image/jpeg
+    - 93612
+    - 2015-04-16 20:41:37.000000000 Z
+    - kasia_p1997@wp.pl
+    - "$2a$10$flHMBsDUbqLT.r3N1gp.jemrUnGFaz1Yn68Hfhzr/OzE5HwdLSIxe"
+    - 2015-04-16 20:41:49.000000000 Z
+    - 2015-04-16 20:41:49.000000000 Z
+  - - 12
+    - 4
+    - Kuba
+    - Wiącek
+    - Eleid
+    - https://www.facebook.com/kuba.wiacek.9
+    - Aktor programista. W teatrze jest od 2008 roku. Niektórzy mają dość jego złośliwego
+      poczucia humoru, które jednak nigdy nie ma na celu obrażenia kogokolwiek, bo
+      w teatrze się NIE OBRAŻAMY!
+    - ja.jpg
+    - image/jpeg
+    - 88432
+    - 2015-04-17 16:22:27.000000000 Z
+    - wiacek.kuba@gmail.com
+    - "$2a$10$mzXFkFRGLCXFH.EEghI/SuYXQE01GJr1yvLXfRXHvOiKNWP.dhBhS"
+    - 2015-04-17 16:22:34.000000000 Z
+    - 2015-04-17 17:00:39.000000000 Z
+  - - 13
+    - 6
+    - Asia
+    - Figas
+    - Asia
+    - https://www.facebook.com/TeatrOtczapy
+    - 'Związana z teatrem od 2008 roku, a z reż. Elą Górczyńską od 2005. Kocha wszystko
+      co artystyczne - od teatru, przez taniec na muzyce kończąc. Ma najbardziej donośny
+      głos przez co często ustawia resztę aktorów do pionu ale gdy potrzeba wysłucha,
+      przytuli i... powie co myśli ;) '
+    - asia.jpg
+    - image/jpeg
+    - 90185
+    - 2015-04-19 14:27:38.000000000 Z
+    - figas.joanna@gmail.com
+    - "$2a$10$V46ZPUzKmr0ZhI4ro1vjG.CL97IDJfzpA3WYPNaYJ0YuY09QtBCQe"
+    - 2015-04-19 14:27:43.000000000 Z
+    - 2015-04-19 15:04:43.000000000 Z
+  - - 14
+    - 7
+    - 'Michalina '
+    - Matuszak
+    - Veni_b
+    - https://www.facebook.com/michalina.matuszak.5
+    - "Mówią o mnie \"artystyczna dusza\". Pochłonięta przez pędzel, film i teatr
+      - najbardziej chyba przez ten Otczapy, \r\nktórego pokochałam już prawie trzy
+      lata temu. Przekonana o tym, że dzień bez uśmiechu, to dzień stracony, \r\nstaram
+      się zarażać nim każdego, komu go brakuje."
+    - 10418337_1502817736614762_4718798831643250483_n.jpg
+    - image/jpeg
+    - 96863
+    - 2015-04-19 19:43:42.000000000 Z
+    - michalina.matuszak@gmail.com
+    - "$2a$10$.E5CEoYwAM.tdG837sdwDubnLIVwxQW3ba5rfhcv4x07DJeP1cdpm"
+    - 2015-04-19 19:43:46.000000000 Z
+    - 2015-05-11 18:31:15.000000000 Z
+  - - 15
+    - 8
+    - Wojciech
+    - Kowalski
+    - tramp
+    - 'https://www.facebook.com/TeatrOtczapy?fref=ts '
+    - Człowiek lasu, w którym mógłby spędzić całe życie. W "Otczapy" od 2013r. Przy
+      okazji drużynowy i karateka w zawieszeniu. W teatrze poszukuje innego spojrzenia
+      na świat.
+    - Wojciech_Kowalski.JPG.jpg
+    - image/jpeg
+    - 522499
+    - 2015-05-10 12:36:41.000000000 Z
+    - kowalskiwojciech986@gmail.com
+    - "$2a$10$f37ylDA/n4MG/4iC5Yu5deIqlpf.xN3YXo6P2McCnhP/PtMS9QICG"
+    - 2015-05-10 11:49:01.000000000 Z
+    - 2015-05-11 14:22:14.000000000 Z
+  - - 16
+    - 9
+    - Anastazja
+    - "Żak"
+    - Nastia
+    - https://www.facebook.com/anastazja.zak
+    - Wariatka, która kocha tańczyć i śpiewać oraz tworzyć spektakle i w nich grać.
+      Co więcej! Ta oto szalona dziewczyna uwielbia pisać i uczyć się szczególnie
+      tego, co w sztuce się mieści, otwarta na świat i wciąż poszukująca. Związana
+      z teatrem i Otczapy całym sercem.
+    - 10499419_1502817839948085_7837088015841131730_o.jpg
+    - image/jpeg
+    - 208052
+    - 2015-05-11 16:53:16.000000000 Z
+    - nastus.zak@gmail.com
+    - "$2a$10$yXZRrZjtxSIk5Hn8Ugh9I.ElO2mG6qlYrlomrD9ZxAkjfzyN33RsO"
+    - 2015-05-11 16:53:22.000000000 Z
+    - 2015-05-12 08:08:28.000000000 Z
+
+---
+workshops:
+  columns:
+  - id
+  - name
+  - link
+  - place
+  - date
+  - position
+  - text
+  - img_file_name
+  - img_content_type
+  - img_file_size
+  - img_updated_at
+  - file_file_name
+  - file_content_type
+  - file_file_size
+  - file_updated_at
+  - created_at
+  - updated_at
+  - category_id
+  - cat_id
+  records: 
+  - - 1
+    - Warsztaty z Maciejem Dziaczko i Kornelem Sadowskim
+    - ''
+    - Wylatkowo
+    - 14-17 sierpnia 2014r.
+    - 2
+    - "<p><strong>Maciejem Dziaczko </strong>- reżyser oświetlenia, aktor, trener
+      miejętności miękkich, reżyser teatru, autor sztuk teatralnych oraz</p>\r\n\r\n<p><strong>Kornel
+      Sadowski</strong> - reżyser i autor większości scenariuszy teatru MAKOMA, student
+      PWST we Wrocławiu na Wydziale Lalkarskim.</p>\r\n"
+    - 1._Maciej_Dziaczko.jpg
+    - image/jpeg
+    - 553458
+    - 2015-05-10 20:37:16.000000000 Z
+    - 
+    - 
+    - 
+    - 
+    - 2015-05-10 20:32:31.000000000 Z
+    - 2015-05-10 22:12:25.000000000 Z
+    - 
+    - 
+  - - 3
+    - Warsztaty tanga z Pawłem Klisowskiego vel Skaut Cleesowsky
+    - ''
+    - Wrzesiński Ośrodek Kultury
+    - 01 czerwca 2014r.
+    - 1
+    - tancerz i choreograf tańców towarzyskich
+    - 7._Paweł_Klisowski.JPG
+    - image/jpeg
+    - 283146
+    - 2015-05-10 21:58:55.000000000 Z
+    - 
+    - 
+    - 
+    - 
+    - 2015-05-10 21:59:03.000000000 Z
+    - 2015-05-11 07:35:11.000000000 Z
+    - 
+    - 
+  - - 8
+    - Warszaty ruchowo-rytmiczne z Maciejem Dziaczko
+    - '8'
+    - Wrzesiński Ośrodek Kultury
+    - 21-22 grudnia 2012r.
+    - 1
+    - "<p>aktor, arte-terapeuta, reżyser, instruktor teatralny, pedagog, reżyser światła</p>\r\n"
+    - 1._Maciej_Dziaczko.jpg
+    - image/jpeg
+    - 553458
+    - 2015-05-11 16:51:45.000000000 Z
+    - 
+    - 
+    - 
+    - 
+    - 2015-05-11 16:51:46.000000000 Z
+    - 2015-05-11 16:57:15.000000000 Z
+    - 1
+    - 
+  - - 9
+    - Warsztaty rytmiczno-ruchowe z Niną Wolską- Pruszowską
+    - '9'
+    - Wrzesiński Ośrodek Kultury
+    - 05 stycznia 2013r.
+    - 2
+    - aktorką , tancerką, reżyserką.
+    - 2._Nina_Wolska.JPG
+    - image/jpeg
+    - 274825
+    - 2015-05-11 17:01:10.000000000 Z
+    - 
+    - 
+    - 
+    - 
+    - 2015-05-11 17:01:14.000000000 Z
+    - 2015-05-11 17:02:31.000000000 Z
+    - 1
+    - 
+  - - 10
+    - '2009'
+    - '3'
+    - Jak zreformować mężczyznę?
+    - ''
+    - 1
+    - http://www.wok.wrzesnia.pl/aktualnosci/37-jak-zreformowac-mezczyzne.html
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 2015-05-11 17:17:29.000000000 Z
+    - 2015-05-11 17:17:29.000000000 Z
+    - 3
+    - 
+  - - 11
+    - '2010'
+    - '3'
+    - Jak wytrzymać z nastolatką?
+    - ''
+    - 2
+    - http://wok.wrzesnia.pl/aktualnosci/90-jak-wytrzymac-z-nastolatka.html
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 2015-05-11 17:18:22.000000000 Z
+    - 2015-05-11 17:18:22.000000000 Z
+    - 3
+    - 

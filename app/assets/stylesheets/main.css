@@ -1,10 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,latin-ext);
 
+
 body {
   font-family: 'Open Sans';
   color: #34495e;
   background-color:#E7E7E7
 }
+.parent {position: relative;}
+.over_hidden { overflow: hidden;}
 .admin .imgs {width:205px; margin: 20px auto !important}
 .admin td:nth-child(2) a { transition: all 0.2s ease;}
 .admin td:nth-child(2) a:hover {text-decoration:underline; color:#6600FF; transition: all 0.2s ease;}
@@ -56,8 +59,11 @@ h4 {
   line-height: 3rem;
   color:#838383
 }
+.zespol_przyciski li {margin-bottom: 14px;}
 
-.table, .table td img, .img-responsive {width: 100% !important;}
+#accept-cookies-checkbox {display: inline-block; cursor: pointer; border: 2px solid #fc4349;background:rgba(255, 0, 0, 0.2)}
+#cookies-message {padding: 10px 0px; font-size: 14px; line-height: 22px;border-top: 2px solid #ADC2FF; text-align: center; position: fixed; bottom: 0px;  background: rgba(40,44,42,0.85); width: 100%; z-index: 1999; color:#FFF}
+.table, .table td img {width: 100% !important;}
 
 a:hover {
   text-decoration: none;
@@ -197,6 +203,7 @@ position: absolute; top: -400px; left:5px; width: 85px !important; transition: a
   transition: all 0.5s ease;
   width: 200px !important
 }
+
 #logo img:hover, #logo_mini img.eye:hover {opacity: 0.7;  transition: all 0.7s ease;}
 /*#####################################################################################################################*/
 /* Slider */
@@ -204,7 +211,23 @@ position: absolute; top: -400px; left:5px; width: 85px !important; transition: a
 #pokaz-slajdow {
   border-top: 8.5rem solid black;
 }
-
+.carousel {position: relative;}
+.carousel .arrows {
+  position: absolute;
+  top:88px;
+  left: 3%;
+  width:5%;
+  height:5%;
+  background: url('../assets/arrowKeys.png') center;
+  background-size: cover;
+  opacity: 0.4;
+  z-index: 50;
+}
+@media(max-width: 780px){
+  .carousel .arrows {
+   display: none;
+  }
+}
 .top_divider {margin-top: 8rem;}
 .carousel .item {
   width: 100%;
@@ -248,7 +271,27 @@ position: absolute; top: -400px; left:5px; width: 85px !important; transition: a
 
 .workshop_slider h3 {margin-bottom: 20px;}
 .workshop_slider p {text-align:left; padding-bottom:0; margin:0;}
-.workshop_slider .content {text-align: justify;text-justify: inter-word; margin: 0 auto 30px !important}
+.workshop_slider .content {text-align: center; font-size: 17px; margin: 18px auto 30px !important}
+.workshop_slider .photo, .panel-heading .photo {
+  position: absolute; 
+  text-align: center; width: 80px; 
+  border-radius:7px; 
+  font-size: 14px;
+  padding: 3px 6px 4px;     
+  background-color: #ffffff;
+  border: 2px solid #fc4349;
+  color: #fc4349;
+  transition: all 0.18s ease;
+}
+.workshop_slider .photo.position {
+  bottom: 14px; right:28px !important; 
+}
+
+.workshop_slider .photo:hover,  .panel-heading .photo:hover {
+  color: #fff;
+  background-color: #fc4349;
+  transition: all 0.12s ease;
+}
 /*#####################################################################################################################*/
 /* Nowosci*/
 /*#####################################################################################################################*/
@@ -275,19 +318,31 @@ position: absolute; top: -400px; left:5px; width: 85px !important; transition: a
 .panel-heading img {
     border-radius: 18px;
 }
-.panel-heading .head_content_left {width: 50%;float: right; text-align: left}
-.panel-heading .head_content_left h3:last-child {right:0;}
-.panel-heading img.img_left {width: 40%; float: right; margin-left: 10%}
+.panel-heading .head_content_left {width: 48%;float: right; text-align: left}
+.panel-heading .head_content_left h3:last-child {text-align: center}
+.panel-heading img.img_left {width: 48%; float: right; margin-left: 4%}
 
-.panel-heading .head_content_right {width: 50%;float: right; text-align: right}
-.panel-heading .head_content_right h3:last-child {text-align: right}
-.panel-heading img.img_right {width: 40%; float: left;margin-right: 10% }
+.panel-heading .head_content_right {width: 48%;float: right; text-align: right}
+.panel-heading .head_content_right h3:last-child {text-align: center}
+.panel-heading img.img_right {width: 48%; float: left;margin-right: 4% }
+
+.panel-heading .photo.left_position {
+  left:none;bottom: 14px; right:28px !important; 
+}
+.panel-heading .photo.right_position {
+  bottom: 14px; left:28px !important; 
+}
 
 @media (max-width: 768px) {
 .panel-heading .head_content_left, .panel-heading .head_content_right {width: 100%;float: left; text-align: center;}
-.panel-heading img.img_left, .panel-heading img.img_right {width: 80%; margin: 10px 10% !important; float: right}
+.panel-heading img.img_left, .panel-heading img.img_right {width: 88%; margin: 10px 6% !important; float: right}
 .panel-heading .head_content_right h3:last-child, .panel-heading .head_content_left h3:last-child {text-align: center}
+
+.panel-heading .photo.right_position, .panel-heading .photo.left_position {
+  bottom: none; top: 18px; left:calc(6% + 28px) !important;  height:52px;
 }
+}
+
 #nowosci a:hover {
   -webkit-animation: pulse .8s;
   animation: pulse .8s;
@@ -337,6 +392,15 @@ position: absolute; top: -400px; left:5px; width: 85px !important; transition: a
 /*#####################################################################################################################*/
 
 #links {text-align: center;}
+
+#links .links a {text-decoration: none; color: #34495e;transition: all 0.17s ease ;}
+#links .links a:hover {text-decoration: underline; color:#0D0D0D ; transition: all 0.17s ease;
+  			-webkit-animation: rubbers 0.9s;
+   			-moz-animation: rubbers 0.9s;
+    		-ms-animation: rubbers 0.9s;
+     		-o-animation: rubbers 0.9s;
+    		animation: rubbers 0.9s;
+}
 
 /*#####################################################################################################################*/
 /* Zespół */
@@ -459,6 +523,13 @@ position: absolute; top: -400px; left:5px; width: 85px !important; transition: a
   display: none;
 }
 /*#####################################################################################################################*/
+/* przekaziory */
+/*#####################################################################################################################*/
+
+#links .links {text-align: center;}
+
+
+/*#####################################################################################################################*/
 /* break */
 /*#####################################################################################################################*/
 #break {
@@ -511,13 +582,45 @@ position: absolute; top: -400px; left:5px; width: 85px !important; transition: a
   margin-right: 2rem;
   width: 4rem;
 }
+#stopka .footer_logo {position: absolute; right: -10px; top: -19px; width:260px;   transition: all 0.12s ease;}
+@media(max-width: 600px){
+#stopka .footer_logo {display: none;}
+}
+#stopka .footer_logo:hover {opacity: 0.6;   transition: all 0.12s ease;}
+#stopka .footer_logo img {width: 100%}
+#stopka #me {cursor: pointer; position: relative;}
+#stopka #info {position: absolute; top: 10px; left: 294px; padding: 10px 12px;	border-top-right-radius: 1em; color:black; background-color: #fff; opacity: 0.0;  transition: all 0.26s ease;}
+#info:before {
+   content:"";
+   position: absolute;
+   right: 100%;
+   top: 36px;
+   width: 0;
+   height: 0;
+   border-top: 12px solid transparent;
+   border-right: 24px solid #fff;
+   border-bottom: 12px solid transparent;
+   transition: all 0.26s ease;
+}
+#stopka #crossed {
+position: absolute; top: -20px; left: 468px;  font-size:28px;
+cursor: pointer;
+transition: all 0.59s ease;
+opacity: 0;
+padding:5px;
+-ms-transform: rotate(138deg); /* IE 9 */
+-webkit-transform: rotate(138deg); /* Chrome, Safari, Opera */
+transform: rotate(138deg);
+}
+
 
 .align_center {text-align:center;}
 .gallery {
-    width:45%;
-    margin: 20px 1.66%!important;
+    width:30%;
+    margin: 20px 1%!important;
     padding: 0 !important;
     height: auto;
+    overflow: hidden;
     transition: transform 0.15s linear;
     display: inline-block;
 
@@ -547,15 +650,92 @@ position: absolute; top: -400px; left:5px; width: 85px !important; transition: a
 
 
 .section {height:auto; background-color: #f7f7f7;}
-.gallery img{max-height:320px; margin:0;padding:0; display: inline-block;}
 .gallery p {font-size: 15px; margin:0; padding:0; }
 .gallery:hover p, .gallery:hover a, .gallery p:hover, .gallery a:hover {text-decoration: none}
-.gallery:hover {
-    opacity: 0.92;
-        transform: scale(1.02);
-    -webkit-transform: scale(1.02);
-    -moz-transform: scale(1.02);
-    -o-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-    transition: transform 0.14s linear;
+
+.gallery .darken h3 {
+  font-size: 18px;
+  position: absolute;
+  font-weight:400;
+  color: #fff;
+  width: 85%;
+  left: 0; right: 0;
+  top: 16px;
+  margin: 0 auto;
+  opacity: 0;
+}
+
+
+.gallery .darken {    
+    display: inline-block;
+    background: black;
+    padding: 0;
+  text-align: center;
+    width:100%;
+}
+.gallery img {
+    margin-left: -5%;
+    width: 110%;
+}
+.gallery .darken img, .gallery .darken h3 {    
+    display: block;
+
+    -webkit-transition: all 0.4s linear;
+       -moz-transition: all 0.4s linear;
+        -ms-transition: all 0.4s linear;
+         -o-transition: all 0.4s linear;
+            transition: all 0.4s linear;
+}
+.gallery .darken:hover img {
+      opacity: 0.4;
+}
+.gallery .darken:hover h3 {
+      opacity: 1;
+}
+
+@keyframes rubbers {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+   	-moz-animation: scale(1);
+    -o-animation: scale(1); 
+    transform: scale(1);
+  }
+
+  30% {
+    -webkit-transform: scaleX(1.15) scaleY(0.85);
+    -ms-transform: scaleX(1.15) scaleY(0.85);
+   	-moz-animation: scaleX(1.15) scaleY(0.85);
+    -o-animation: scaleX(1.15) scaleY(0.85);
+    transform: scaleX(1.15) scaleY(0.85);
+  }
+
+  40% {
+    -webkit-transform: scaleX(0.85) scaleY(1.15);
+    -ms-transform: scaleX(0.85) scaleY(1.15);
+   	-moz-animation: scaleX(0.85) scaleY(1.15);
+    -o-animation: scaleX(0.85) scaleY(1.15);
+    transform: scaleX(0.85) scaleY(1.15);
+  }
+
+  60% {
+    -webkit-transform: scaleX(1.05) scaleY(0.92);
+    -ms-transform: scaleX(1.05) scaleY(0.92);
+   	-moz-animation: scaleX(1.05) scaleY(0.92);
+    -o-animation: scaleX(1.05) scaleY(0.92);
+    transform: scaleX(1.05) scaleY(0.92);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+   	-moz-animation: scale(1);
+    -o-animation: scale(1);
+    transform: scale(1);
+  }
+}
+
+.rubber:hover {
+  -webkit-animation: rubbers .4s;
+  animation: rubbers .4s; 
 }

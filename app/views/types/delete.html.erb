@@ -1,9 +1,9 @@
 <div class="hero-unit">
-<h1>Usuń Konto</h1>
+<h1>Usuń całą kategorię</h1>
 
 <%= form_for(:type, :url => {:action => 'destroy', :id => @type.id}) do |pole| %>
 
-<p >Czy napewno chcesz usunąć konto użytkownika: <span class ="text-warning"><%= @type.name %> ?<span/></p>
+<p >Czy napewno chcesz usunąć kategorię: <span class ="text-warning"><%= @type.name %> ?<span/></p>
 
 
 <div>

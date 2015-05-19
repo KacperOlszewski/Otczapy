@@ -5,7 +5,7 @@ class Gallery < ActiveRecord::Base
 	has_many :photos, :dependent => :destroy
 
 	has_attached_file :img,
-					 :styles => {:medium => "400x400>", :thumb => "200x200>"}
+					 :styles => {:medium => "300x300>", :thumb => "200x200>"}
  	
  	validates_attachment_content_type :img,
 									:content_type => /^image\/(png|gif|jpeg)/,

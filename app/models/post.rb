@@ -4,7 +4,7 @@ class Post < ActiveRecord::Base
 
         
     has_attached_file :img,
-					   :styles => {:medium => "400x400>", :thumb => "100x100>" }
+					   :styles => {:medium => "300x300>", :thumb => "100x100>" }
 	has_attached_file :file
 
 

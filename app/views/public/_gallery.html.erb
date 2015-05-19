@@ -1,5 +1,5 @@
 
-  <section data-no-turbolink id="gallery">
+  <section id="gallery">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 gallery_naglowek">       
@@ -26,17 +26,17 @@
                               <div class="align_center">
                                     <% @gallery.each do |gallery| %>
                                     
-                                        <div class="gallery">
+                                        <div class="gallery parent">
                                     
-                                                <%= link_to({:action => 'photos', :gallery_id => gallery.id}) do %>
-                
-                                                        <h3><%= gallery.name %></h3>
-                                                        <%= image_tag(gallery.img.url, :class => "img-responsive", :alt =>gallery.name) %>
-                    
+                                                <%= link_to({:action => 'photos', :gallery_id => gallery.id}, {:class => 'darken'}) do %>
+
+                                                    <h3><%= gallery.name %></h3>
+                                                    <%= image_tag(gallery.img.url(:medium), :class => "img-responsive", :alt =>gallery.name) %>
+                                                    
                                                 <% end %>
                                         </div>
                                     <% end %>
-                                    </div>
+                                     </div>
                                 <% end %>
                         </section>
                         <section id="muza">

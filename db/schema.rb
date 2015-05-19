@@ -11,12 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150510195852) do
+ActiveRecord::Schema.define(version: 20150511124938) do
 
   create_table "calendars", force: true do |t|
     t.string   "name"
     t.integer  "position"
     t.text     "link"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "cats", force: true do |t|
+    t.string   "name"
+    t.integer  "position"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -145,6 +152,8 @@ ActiveRecord::Schema.define(version: 20150510195852) do
     t.datetime "file_updated_at"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
+    t.integer  "category_id"
+    t.integer  "cat_id"
   end
 
 end

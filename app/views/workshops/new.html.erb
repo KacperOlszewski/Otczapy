@@ -2,13 +2,13 @@
 	
 <h1>Nowy Workshop</h1>
 
-<%= form_for(:workshop, :url => {:action => 'create'}) do |pole| %>
+<%= form_for(:workshops, :url => {:action => 'create', :category_id => @cats.id}) do |pole| %>
 
 <%= render(:partial => "form", :locals => {:pole => pole}) %>
 
 <div style="text-align: center;">
 	<%= submit_tag("utwórz", :class =>'btn btn-mini btn-warning') %>
-	<%= link_to("powrót", {:action => 'index'}, {:class => "btn btn-mini btn-primary"}) %>
+	<%= link_to("powrót", {:action => 'index', :category_id => @cats.id}, {:class => "btn btn-mini btn-primary"}) %>
 </div>
 
 <% end %>

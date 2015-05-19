@@ -1,0 +1,30 @@
+<div class="hero-unit">
+<h1>Dziedzina</h1>
+
+<%= link_to("dodaj nową dziedzinę", {:action => 'new'}, {:class =>'btn btn-mini btn-primary'}) %>
+
+<p style='text-align: right;'>Ilość dziedzin: <%= @category.size %> </p>
+
+<table class="table table-striped table-bordered"> 
+	<tr class="info">
+		<th>Id</th>
+		<th>Pozycja</th>
+		<th>Nazwa</th>
+		<th>akcja</th>
+	</tr>
+<% @category.each do |cats| %>
+	<tr>
+		<td><%= cats.id %></td>
+		<td><%= cats.position %></td>
+		<td><%= link_to cats.name, {:controller => 'workshops', :category_id => cats.id} %></td>
+		<td class="action">   
+			<%= link_to("edycja", {:action => 'edit', :id => cats.id}, {:class => "btn btn-xs btn-warning"}) %>
+			<%= link_to("usuń", {:action => 'delete', :id => cats.id}, {:class => "btn btn-xs btn-danger"}) %>
+		</td>
+	</tr>
+
+	<% end %>
+
+</table>
+
+</div>

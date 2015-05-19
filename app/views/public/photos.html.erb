@@ -1,4 +1,4 @@
-<% @title = "Zdjęcia Otczapy" %>
+
 <div class="container photos_container">
 
     <h2><%= @photo.name %>		
@@ -12,7 +12,7 @@
                 
             	<% @photo.photos.order('position DESC').each do |pictures| %>
                 	<a href="<%= pictures.img.url %>" title="<%= pictures.name %>">
-        				<%= image_tag(pictures.img.url(:original, :alt =>pictures.name)) %>
+        				<%= image_tag(pictures.img.url(:thumb, :alt =>pictures.name)) %>
         			</a>
         		<% end %>
         		

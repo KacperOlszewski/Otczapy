@@ -1,6 +1,6 @@
 class UserEmail < ActionMailer::Base
     
-    default to: 'kacperolszewski@o2.pl'
+    default to: 'teatrotczapy@gmail.com'
      
     def email(name, email, body)
         @name = name

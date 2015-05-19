@@ -1,35 +1,40 @@
 <div class="hero-unit">
-<h1>Aktualności</h1>
+<h1>Warsztaty</h1>
 
-<%= link_to("dodaj nowego workshopa", {:action => 'new'}, {:class =>'btn btn-mini btn-primary'}) %>
+<%= link_to("dodaj nowego workshopa", {:action => 'new', :category_id => @cats.id},{data: { no_turbolink: true },:class =>'btn btn-mini btn-primary'}) %>
 
-<p style='text-align: right;'>Ilość workshopów: <%= @workshop.size %> </p>
+<p style='text-align: right;'>Ilość workshopów: <%= @workshops.size %> </p>
 
 <table class="table table-striped table-bordered">
 	<tr class="info">
 
 		<th>pozycja</th>
 		<th>nazwa</th>
+		<th>miejsce</th>
+		<th>data</th>
 		<th>zdjęcie</th>
 		<th>plik do pobrania</th>
 		<th>akcja</th>
 	</tr>
-<% @workshop.each do |workshops| %>
+<% @workshops.each do |workshops| %>
 	<tr>
 
 		<td><%= workshops.position %></td>
-		<td><%= link_to workshops.name, {:action => 'show', :id => workshops.id} %></td>
+		<td><%= workshops.name %></td>
+		<td><%= workshops.place %></td>
+		<td><%= workshops.date %></td>
 		<td><%= image_tag workshops.img.url(:thumb) %></td>
-        <td ><% if !workshops.file.blank? %>
+        <td>
+        	<% if !workshops.file.blank? %>
              dodano
           <% else %>
             brak
           <% end %>
-    </td>	
+	    </td>	
 
 		<td class="action">   
-			<%= link_to("edycja", {:action => 'edit', :id => workshops.id}, {:class => "btn btn-xs btn-warning"}) %>
-			<%= link_to("usuń", {:action => 'delete', :id => workshops.id}, {:class => "btn btn-xs btn-danger"}) %>
+			<%= link_to("edycja", {:action => 'edit', :id => workshops.id, :category_id => @cats.id},{data: { no_turbolink: true },:class => "btn btn-xs btn-warning"}) %>
+			<%= link_to("usuń", {:action => 'delete', :id => workshops.id, :category_id => @cats.id}, {:class => "btn btn-xs btn-danger"}) %>
 		</td>
 	</tr>
 

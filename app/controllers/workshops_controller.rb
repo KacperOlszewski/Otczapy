@@ -1,67 +1,80 @@
 class WorkshopsController < ApplicationController
   
 layout 'admin'
-before_action :user_check
+before_action :user_check, :admin_check
+
+before_action :parent_cat
 
   def index
-  	@workshop = Workshop.sort
+  	@workshops = @asd
   end
 
   def new
-  	@workshop = Workshop.new({:name => "Nazwa Warsztatu...", :position =>(Workshop.count + 1)})
-    @counter = Workshop.count + 1
+  	@workshops = Workshop.new({:name => "Nazwa Warsztatu...", :category_id => @cats.id, :position =>( @asd.count + 1)})
+    @counter = @asd.count + 1
+    @cat = Cat.order('position ASC')
     @gallery = Gallery.order('position ASC')
   end
 
   def create
-  	@workshop = Workshop.new(workshop_params)
-  	if @workshop.save
+  	@workshops = Workshop.new(workshop_params)
+  	if @workshops.save
   		flash[:notice] = "Workshop dodany"
-  		redirect_to(:action => 'index')
+  		redirect_to(:action => 'index', :category_id => @cats.id)
   	else
-  	 @counter = Workshop.all.count + 1
+  	 @counter = @asd.count + 1
+     @cat = Cat.order('position ASC')
      @gallery = Gallery.order('position ASC')
-  		render('new')
+  	 render('new')
   	end
   end
 
   def edit
-    @workshop = Workshop.find(params[:id])
+    @workshops = Workshop.find(params[:id])
+    @cat = Cat.order('position ASC')
     @gallery = Gallery.order('position ASC')
-    @counter = Workshop.all.count
+    @counter = @asd.count
   end
 
     def update
-      @workshop = Workshop.find(params[:id])
-    if @workshop.update_attributes(workshop_params)
+      @workshops = Workshop.find(params[:id])
+    if @workshops.update_attributes(workshop_params)
        flash[:notice] = "Workshop pomyślnie zmodyfikowany"
-      redirect_to(:action=>'show', :id => @workshop.id)
+      redirect_to(:action=>'index',  :category_id => @cats.id)
     else
-      @counter = Workshop.all.count
-      @gallery = Gallery.order('position ASC')
+      @counter = @asd.count
+      @cat = Cat.order('position ASC')
       render('edit')
     end
   end
   
   def show
-    @workshop = Workshop.find(params[:id])
+    @workshops = Workshop.find(params[:id])
   end
   
   def delete
   
-    @workshop = Workshop.find(params[:id])
+    @workshops = Workshop.find(params[:id])
   end
 
   def destroy
-    @workshop = Workshop.find(params[:id]).destroy
+    @workshops = Workshop.find(params[:id]).destroy
     flash[:notice] = "Workshop pomyślnie usunięty"
-    redirect_to(:action=>'index')
+    redirect_to(:action=>'index', :category_id => @cats.id)
   end
 
   private
 
  def workshop_params
- 	params.require(:workshop).permit(:name, :place, :date, :link, :position, :text, :img, :file)
+ 	params.require(:workshops).permit(:name, :place, :date, :link, :position, :category_id, :text, :img, :file)
  end
-
+ 
+  def parent_cat
+    if params[:category_id]
+      @cats = Cat.find(params[:category_id])
+      @asd = Workshop.where(:category_id => (params[:category_id]))
+    end
+  end
 end
+
+

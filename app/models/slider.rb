@@ -3,7 +3,7 @@ class Slider < ActiveRecord::Base
     
     has_attached_file :img,
     					
-					   :styles => {:medium => "400x400>", :thumb => "100x100>" }
+					   :styles => {:medium => "400x400>", :thumb => "100x100>", :large => "1300x1300" }
 
  
 

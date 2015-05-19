@@ -37,10 +37,10 @@
 	</tr>
 	<tr>
 		<th><%= pole.label(:text, "Treść") %></th>
-		<td><%= pole.text_area :text, rows: 20, data: { no_turbolink: true }, :class =>"ckeditor" %></td>
+		<td><%= pole.text_area :text, rows: 20, :class =>"ckeditor" %></td>
 	</tr>
 	<tr>
 		<th><%= pole.label(:link, "Link do galerii") %></th>
-		<td><%= pole.select(:link, @gallery.map{|t| [t.name, t.link]}, :class => 'form-control') %></td>
+		<td><%= pole.select(:link, @gallery.map{|t| [t.name, t.id]}, :class => 'form-control') %></td>
 	</tr>
 </table>

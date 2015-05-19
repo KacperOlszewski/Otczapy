@@ -11,7 +11,8 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
-//= require jquery-ui
+//= require jquery.turbolinks
+//= require jquery-ui/datepicker
 //= require jquery_ujs
 //= require ckeditor/init
 //= require turbolinks

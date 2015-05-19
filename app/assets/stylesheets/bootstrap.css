@@ -919,10 +919,10 @@ img {
 .thumbnail > img,
 .thumbnail a > img,
 .carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
+.carousl-inner > .item > a > img {
   display: block;
   width: 100% \9;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 .img-rounded {
@@ -5733,7 +5733,7 @@ button.close {
   left: 0;
   bottom: 0;
   width: 8%;
-  opacity: 0.4;
+  opacity: 0.5;
   filter: alpha(opacity=40);
   font-size: 24px;
   color: #fc4349;

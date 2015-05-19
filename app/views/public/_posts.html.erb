@@ -12,15 +12,20 @@
             <div class="row">
                 <div class="panel-group" id="menu_harmonijkowe">
                     <% @post.each do |posts| %>  
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel nowosci_panel">
+                        <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel nowosci_panel">
     
-                            <div class="panel-heading">
+                            <div class="panel-heading parent">
+                                <% if !posts.link.blank? %>
+                                        <a href="/public/photos?gallery_id=<%= posts.link %>">
+                                                <p class="photo btn-success <% if a % 2 == 0 %> right_position<% else %>left_position<% end %>">Zobacz zdjęcia!</p>
+                                        </a> 
+                                <% end %>
                                 
                                 <a href=<%="##{a}post"%> data-toggle="collapse" data-parent="#menu_harmonijkowe">
                                     <% if a % 2 == 0 %>
-        						        <%= image_tag(posts.img.url, :class => "img_right") %>
+        						        <%= image_tag(posts.img.url(:medium), :class => "img_right") %>
         						    <% else %>
-        						        <%= image_tag(posts.img.url, :class => "img_left") %>
+        						        <%= image_tag(posts.img.url(:medium), :class => "img_left") %>
                                     <% end %>
                                         <div class= <% if a % 2 == 0 %> "head_content_right"<% else %>"head_content_left"<% end %> >
           
@@ -34,13 +39,13 @@
                             </div>
                                 
                                 <div id=<%="#{a}post"%> class="panel-collapse collapse">
-                                    <div class="panel-body">
+                                    <details class="panel-body">
                                         <%= raw(posts.text) %>
-                                    </div>
+                                    </details>
                                 </div>
                                 
                              
-                        </div>
+                        </article>
                         
                     <% a+=1 %>
                     <% end %>

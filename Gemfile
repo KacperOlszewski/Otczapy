@@ -27,7 +27,6 @@ gem 'i18n', '~> 0.6.9'
 gem 'globalize', '~> 4.0.3'
 gem 'rails-i18n'
 gem 'will_paginate'
-
 # gem "friendly_id"
 
 gem "ckeditor"
@@ -36,6 +35,7 @@ gem 'yaml_db'
 gem 'paperclip', '~> 4.2.0'
 # Use jquery as the JavaScript library
 gem "jquery-rails", "~> 2.3.0"
+gem 'jquery-turbolinks'
 gem 'jquery-ui-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks

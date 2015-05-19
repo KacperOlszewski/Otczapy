@@ -1,14 +1,14 @@
 <div class="hero-unit">
-<h1>Usuń workshopa</h1>
+<h1>Usuń workshopsa</h1>
 
-<%= form_for(:workshop, :url => {:action => 'destroy', :id => @workshop.id}) do |pole| %>
+<%= form_for(:workshops, :url => {:action => 'destroy',:category_id => @cats.id, :id => @workshops.id}) do |pole| %>
 
-<p >Czy napewno chcesz usunąć workshopa: <p class ="text-warning"><%= @workshop.name %> ?<p/></p>
+<p >Czy napewno chcesz usunąć workshopsa: <p class ="text-warning"><%= @workshops.name %> ?<p/></p>
 
 
 <div>
 	<%= submit_tag("Usuń",  {:class => "btn btn-mini btn-warning"}) %>
-	<%= link_to("powrót", {:action=> 'index'}, {:class => "btn btn-mini btn-primary"}) %>
+	<%= link_to("powrót", {:action=> 'index', :category_id => @cats.id}, {:class => "btn btn-mini btn-primary"}) %>
 </div>
 
 <% end %>
